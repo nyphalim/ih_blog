@@ -1,0 +1,2 @@
+.list{list-style:none;width:100%;display:flex;justify-content:center}.list-item{font-size:0.95em;height:25px;display:flex;align-items:center;white-space:nowrap}.list-item:nth-of-type(2){width:110px;margin:0 20px;justify-content:center;border-left:1px solid rgba(255,255,255,0.2);border-right:1px solid rgba(255,255,255,0.2)}.list-item i{font-size:24px;margin-right:8px}@media (max-width: 768px){.list-item{font-size:12px}}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    font-family: $main-font;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+    position: relative;
+}
+h1, h2 {
+    font-family: $second-font-heavy;
+}
+h1 {
+    font-size: 2.15em;
+    line-height: 1.7em;
+    color: $h1;
+}
+h2 {
+    font-size: 3.2em;
+    line-height: 1.1em;
+}
+h3 {
+    font-family: $main-font-bold;
+    font-size: 1.35em;
+    line-height: 1.2em;
+    color: $h3;
+}
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.btn {
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+    outline: none;
+    font-size: inherit;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.blog-section {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.overlay {
+    background: rgba(#000000, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg)
+    }
+}
+@media (max-width: 992px) {
+    h1 {
+        font-size: 1.75em;
+    }
+    h2 {
+        font-size: 2.4em;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.34em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    .blog-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,77 @@
+.blog-detail-content {
+    ul:not(.list), ol:not(.list) {
+        padding: 17px 0 15px;
+    }
+    li:not(.list-item) {
+        list-style: none;
+        margin-bottom: 25px;
+        position: relative;
+        padding-left: 54px;
+        font-size: 1.34em;
+        line-height: 1.45em;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -7px;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: no-repeat center $yellow-light;
+            text-align: center;
+            line-height: 40px;
+        }
+    }
+    ul {
+        margin-bottom: 30px;
+        li {
+            &::before {
+                background-image: url('./img/check-mark.svg') !important;
+            }
+        }
+    }
+    ol {
+        counter-reset: newCounter;
+        margin-bottom: 30px;
+        li {
+            list-style-position: inside;
+            &::before {
+                counter-increment: newCounter;
+                content: counter(newCounter) !important;
+                color: $dark-text;
+                font-family: $blog-font-black;
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .blog-detail-content {
+        li:not(.list-item) {
+            padding-left: 40px;
+            font-size: 1.07em;
+            margin-bottom: 20px;
+
+            &::before {
+                top: -3px;
+                width: 32px;
+                height: 32px;
+                line-height: 30px;
+            }
+        }
+
+        ul {
+            li::before {
+                background-size: 13px 13px;
+            }
+        }
+
+        ol {
+            margin-bottom: 25px;
+            li::before {
+                font-size: 15px;
+            }
+        }
+    }
+}

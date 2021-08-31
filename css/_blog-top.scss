@@ -1,0 +1,125 @@
+.blog-top {
+    overflow: hidden;
+    font-family: $main-font-bold;
+    &-logo {
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+    }
+    &-navbar {
+        width: 100%;
+        color: $top-menu;
+        display: flex;
+        align-items: center;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        position: relative;
+        &-item {
+            padding: 2px 0;
+            white-space: nowrap;
+            &:not(:last-of-type) {
+                margin-right: 20px;
+            }
+        }
+        &-list {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+    }
+    &-title {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 25px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -60%;
+            width: 3000px;
+            height: 1px;
+            background: $search-bottom;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .blog-top {
+        &-logo {
+            width: 130px;
+            bottom: 2px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .blog-top-navbar-item {
+        border-bottom: 1px solid transparent;
+        @include hoverMenu($menu-hover-border);
+        &.active {
+            border-bottom-color: $menu-hover-border;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .blog-top {
+        &-logo {
+            position: unset;
+        }
+        &-navbar {
+            &-list {
+                font-size: 0.85em;
+            }
+            &-item:not(:last-of-type) {
+                margin-right: 13px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .blog-top {
+        padding-left: 0;
+        padding-right: 0;
+        .container {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &-logo {
+            display: none;
+        }
+        &-title {
+            padding: 13px 0;
+            &:before {
+                display: none;
+            }
+        }
+        &-navbar {
+            width: 100%;
+            color: #818181;
+            background: $search-bg;
+            margin: 0;
+            overflow-x: auto;
+            &-item {
+                padding: 12px 8px;
+                &:not(:last-of-type) {
+                    margin-right: 0;
+                }
+                a {
+                    font-size: 0.94em;
+                }
+                &:first-of-type {
+                    padding-left: 15px;
+                }
+            }
+            &-list {
+                justify-content: left;
+            }
+        }
+        .active {
+            color: $top-menu;
+            padding-bottom: 10px;
+            border-bottom: 2px solid $active-theme;
+        }
+    }
+}

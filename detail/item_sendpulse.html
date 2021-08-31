@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/font-icomoon.css">
+    <link rel="stylesheet" href="../css/font-icomoon-blog.css">
+    <link rel="stylesheet" href="../../../js/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../main.css">
+    <title>Блог ИнфоХит</title>
+    <style>
+        @font-face {
+            font-family: 'Formular';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400;
+            src: url('../fonts/Formular/Formular.eot');
+            src: local('Formular'), local('Formular-Regular'),
+            url('../fonts/Formular/Formular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Formular/Formular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Formular/Formular.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Formular/Formular.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'FormularBlack';
+            font-display: swap;
+            font-style: normal;
+            font-weight: normal;
+            src: url('../fonts/Formular/FormularBlack/Formular-Black.eot'); /* IE9 Compat Modes */
+            src: local('Formular-Black'),
+            url('../fonts/Formular/FormularBlack/Formular-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Formular/FormularBlack/Formular-Black.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Formular/FormularBlack/Formular-Black.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Formular/FormularBlack/Formular-Black.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'FormularBold';
+            font-display: swap;
+            font-style: normal;
+            font-weight: bold;
+            src: url('../fonts/Formular/FormularBold/Formular-Bold.eot'); /* IE9 Compat Modes */
+            src: local('Formular-Bold'),
+            url('../fonts/Formular/FormularBold/Formular-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Formular/FormularBold/Formular-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Formular/FormularBold/Formular-Bold.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Formular/FormularBold/Formular-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaPro';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400;
+            src: url('../fonts/LavaPro/LavaPro-Regular.eot'); /* IE9 Compat Modes */
+            src: local('LavaPro'), local('LavaPro-Regular'),
+            url('../fonts/LavaPro/LavaPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaPro-Regular.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaPro-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaProItalic';
+            font-display: swap;
+            font-style: italic;
+            font-weight: 400;
+            src: url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.eot'); /* IE9 Compat Modes */
+            src: local('Lava Pro Regular Italic'), local('Lava-Pro-Regular-Italic'),
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaProBold';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 800;
+            src: url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.eot'); /* IE9 Compat Modes */
+            src: local('LavaPro-Bold'),
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaProHeavy';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 900;
+            src: url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.eot'); /* IE9 Compat Modes */
+            src: local('LavaPro-Heavy'),
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('../fonts/icomoon/icomoon.eot?bswf9v');
+            src:  url('../fonts/icomoon/icomoon.eot?bswf9v#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon/icomoon.ttf?bswf9v') format('truetype'),
+            url('../fonts/icomoon/icomoon.woff?bswf9v') format('woff'),
+            url('../fonts/icomoon/icomoon.svg?bswf9v#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        @font-face {
+            font-family: 'icomoon-blog';
+            src:  url('../fonts/icomoon-blog/icomoon.eot?bswf9v');
+            src:  url('../fonts/icomoon-blog/icomoon.eot?bswf9v#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon-blog/icomoon.ttf?bswf9v') format('truetype'),
+            url('../fonts/icomoon-blog/icomoon.woff?bswf9v') format('woff'),
+            url('../fonts/icomoon-blog/icomoon.svg?bswf9v#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="header entered transparent">
+        <div class="header-menu-wrap">
+            <a href="#" class="header-logo"><img src="../img/header-logo.svg" alt=""><span style="background-image: url('../img/logo-mobile.svg')"></span></a>
+            <nav class="header-menu">
+                <a href="#" class="header-menu-item">Каталог курсов</a>
+                <a href="#" class="header-menu-item">Авторы</a>
+                <a href="#" class="header-menu-item">Онлайн-школы</a>
+                <a href="#" class="header-menu-item">События</a>
+                <a href="#" class="header-menu-item">Блог</a>
+            </nav>
+            <button class="btn header-search-icon" id="header-search">
+                <i class="icon-blog-magnifiying-glass"></i>
+                <i class="icon-blog-exit"></i>
+            </button>
+            <div class="header-enter">
+                <button class="btn header-enter-btn">Войти</button>
+                <div class="header-user">
+                    <button class="btn header-user-menu-btn" id="user-menu">
+                        <img src="../img/user.jpg" class="header-user-img"/>
+                        <i class="icon-blog-arrow-down"></i>
+                    </button>
+                    <ul class="header-user-menu" style="display: none">
+                        <li class="header-user-menu-item"><a href="">Личный кабинет</a></li>
+                        <li class="header-user-menu-item"><a href="">Настройки аккаунта</a></li>
+                        <li class="header-user-menu-item header-user-exit"><a href=""><i class="icon-blog-login"></i>Выйти</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn header-mobile-menu-btn" id="open-mobile-menu"><i class="icon-blog-mobile-menu"></i></button>
+        </div>
+        <div class="header-search-wrap" style="display: none">
+            <input type="text" class="header-search-field" name="blog-search" id="blog-search">
+            <button type="submit" class="btn header-search-btn" value="Искать"><i class="icon-blog-magnifiying-glass"></i></button>
+        </div>
+        <section class="mobile-menu" style="display: none">
+            <div class="mobile-menu-header">
+                <img class="mobile-menu-header-logo" src="../img/logo-yellow.svg" alt="Логотип ИнфоХит" />
+                <button class="btn close-btn" id="close-mobile-menu"><i class="icon-blog-exit"></i></button>
+            </div>
+            <div class="mobile-menu-user">
+                <a href="#" class="mobile-menu-login"><i class="icon-blog-login"></i>Войти</a>
+                <a href="#" class="mobile-menu-user-info" id="mobile-user-btn">
+                    <div class="mobile-menu-user-img">
+                        <img src="../img/user.jpg" />
+                        <span class="mobile-menu-user-name">Антон</span>
+                    </div>
+                    <i class="icon-blog-arrow-down"></i>
+                </a>
+                <ul class="mobile-menu-user-props" style="display: none">
+                    <li class="mobile-menu-user-item"><a>Личный кабинет</a></li>
+                    <li class="mobile-menu-user-item"><a>Настройки аккаунта</a></li>
+                    <li class="mobile-menu-user-item mobile-menu-user-exit"><a><i class="icon-blog-login"></i>Выйти</a></li>
+                </ul>
+            </div>
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-list-item"><a href="#">Каталог курсов</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Авторы</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Онлайн-школы</a></li>
+                <li class="mobile-menu-list-item"><a href="#">События</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Блог</a></li>
+            </ul>
+            <a href="#" class="mobile-menu-bottom-list">О проекте</a>
+            <a href="#" class="mobile-menu-bottom-list">Сотрудничество</a>
+        </section>
+    </header>
+    <div class="overlay" style="display: none"></div>
+    <main>
+        <section class="blog-detail-cover" style="background-image: url('img/top-bg.jpg');">
+            <div class="blog-detail-cover-filter" style="background-color: #ad6220; opacity: 0.85;"></div>
+            <div class="blog-detail-cover-wrap">
+                <div class="container">
+                    <a class="blog-detail-cover-breadcrumb"><i class="icon-blog-left-long-arrow"></i>Интернет маркетинг</a>
+                    <ul class="blog-detail-cover-data list">
+                        <li class="list-item">26.10.2020</li>
+                        <li class="list-item"><i class="icon-blog-views"></i>3 678</li>
+                        <li class="list-item"><i class="icon-blog-comments"></i>4</li>
+                    </ul>
+                    <h1 class="blog-detail-cover-title">Как снимать видеоуроки для курсов. 9 правил, о которых вы не задумывались</h1>
+                    <p class="blog-detail-cover-subtitle">Разбираемся, как записывать видеоуроки, чтобы сэкономить время и деньги на создании собственной онлайн-школы.</p>
+                </div>
+            </div>
+        </section>
+        <section class="blog-detail-container">
+            <div class="container">
+                <article class="blog-detail-content">
+                    <p>На какие моменты стоит обратить внимание, снимая видео для курса? О необходимости записывать в высоком качестве говорить не будем. Это само собой разумеется, ведь мы живем в эпоху YouTube, когда даже дети научились делать качественный видеоконтент.</p>
+                    <section class="blog-detail-author">
+                        <div class="blog-detail-author-item">
+                            <div><img src="img/author-img.jpg" alt="Автор материала: Лариса Куранова"></div>
+                            <div>
+                                <div class="blog-detail-author-name">Лариса Куранова</div>
+                                <span>Редактор ИнфоХит</span>
+                            </div>
+                        </div>
+                    </section>
+                    <h2>Из истории сервиса</h2>
+                    <p>Современный сайт и выгодное предложение не гарантируют поток клиентов. Потенциальные покупатели могут откладывать покупку на потом, терять в итоге интерес к продукту и уходить к конкурентам. Предотвратить это помогают автоворонки продаж. Они позволяют проводить потенциального покупателя из пункта А в пункт В с помощью таких инструментов как лид-магнит, email рассылки, чат-боты в мессенджерах и социальных сетях, SMS.</p>
+                    <p>Согласно статистике, после автоматизации маркетинговых процессов <span class="highlighted-text">80% компаний отмечают увеличение количества потенциальных клиентов, а 77% – повышение конверсий.</span> Поэтому продуманная и правильно настроенная автоворонка продаж – основа успешного развития и продвижения онлайн-школы. С ее помощью автоматизируют общение с лидами, продажи и увеличивают лояльность клиентов.</p>
+                    <p class="parag-intended">Автоворонка – система привлечения потенциальных клиентов, их взращивания, конвертации в покупателей и удержания. Крайне важно продумывать коммуникацию с клиентом после покупки, поскольку только в этом случае он останется с вами, а не уйдет к конкурентам. Построение долгосрочных доверительных взаимоотношений – залог высокой конкурентоспособности онлайн-школы.</p>
+                    <p>Тщательно продуманная стратегия коммуникации позволяет увеличить целевую аудиторию за счет рекомендаций довольных учеников, укрепить репутацию бренда и повысить количество повторных продаж. Далее вы узнаете, как создать эффективную автоворонку и какие инструменты использовать.</p>
+                    <h3>Этапы разработки автоворонки для онлайн-школы</h3>
+                    <ol>
+                        <li><strong>Постановка целей</strong><br>У автоворонки продаж должна быть четкая цель. Это может быть продажа курса, увеличение базы подписчиков, повышение лояльности клиентов. Понимание того, зачем нужна автоворонка продаж, помогает в разработке стратегии, формировании задач и составлении маркетингового плана (детального пошагового руководства для достижения поставленных целей и отслеживания результатов).</li>
+                        <li><strong>Изучение целевой аудитории</strong><br>На этом этапе составляют детальный портрет потенциального покупателя. Анализируют интересы, боли, возраст, пол, уровень дохода, семейное положение, соцсети, предпочитаемые мессенджеры и другие данные, которые можно использовать для создания персонализированных предложений. Эта информация позволяет выбрать релевантные каналы коммуникации, создать контент и выявить триггеры, помогающие конвертировать потенциального покупателя в клиента.</li>
+                        <li><strong>Анализ пути покупателя</strong><br>Этот этап подразумевает изучение маршрута клиента. Путь покупателя начинается с выявления проблемы и заканчивается ее решением. Проанализируйте, как клиенты находят вашу онлайн-школу, почему они ее ищут, какие задачи хотят решить и какие каналы используют для поиска, чем вы можете быть полезны своей целевой аудитории.</li>
+                        <li><strong>Анализ офферов конкурентов</strong><br>Просмотрите лендинги, социальные сети и рассылки своих конкурентов. Проанализируйте их УТП (уникальное торговое предложение), призывы к действию, контент. Посмотрите, что сделано хорошо, а что можно улучшить. Используйте эту информацию для создания своего уникального предложения.</li>
+                        <li><strong>Создание УТП</strong><br>На этом этапе важно создать уникальное торговое предложение и продумать его упаковку. Не копируйте конкурентов. Чтобы выделиться на их фоне, постарайтесь удивить потенциального клиента, расположить его к себе и завоевать доверие. Сделайте такое УТП, от которого целевая аудитория просто не сможет отказаться, несмотря на предложения конкурентов.</li>
+                        <li><strong>Подготовка модели автоворонки продаж</strong><br>Теперь, на основании портрета целевой аудитории и пути покупателя подумайте, где вы сможете привлечь внимание целевой аудитории и как будете выстраивать коммуникацию. Проанализируйте FAQ клиентов, посмотрите, какие возражения возникают у потенциальных покупателей и создайте автоворонку продаж. Для построения этапов вы можете использовать модель AIDA (Attention — внимание, Interest — интерес, Desire — желание, Action — действие).</li>
+                    </ol>
+                    <p class="highlighted-parag">Представьте, что вы запускаете курсы по изучению английского. Ваша целевая аудитория — преимущественно люди 25-30 лет. Для них важна доступная цена, инновационные методики обучения и гарантии, что время и деньги не будут потрачены зря. Давайте посмотрим, из каких этапов может состоять автоворонка продаж для продвижения курсов по изучению языка.</p>
+                    <ul>
+                        <li><strong>Лендинг</strong><br>Регистрация на бесплатный вебинар по самостоятельному изучению английского. Для привлечения подписчиков используется подарок в виде PDF-книги или чек-листа с полезными учебниками и ресурсами.</li>
+                        <li><strong>Приветственная серия писем</strong><br>В ней клиента благодарят за регистрацию, дарят обещанный подарок и подогревают интерес до момента проведения вебинара.</li>
+                        <li><strong>Email-рассылка после вебинара</strong><br>В письме подписчиков благодарят за участие, предлагают заполнить краткую форму обратной связи и взамен получить скидку на полный курс изучения английского.</li>
+                    </ul>
+                    <p>Поскольку почтовые ящики современных людей заполнены разными рассылками и уведомлениями, то письмо с напоминанием о вебинаре или со скидкой на весь курс может просто затеряться. Поэтому, в email-маркетинге важно отслеживать статистику и делать дополнительную рассылку по непрочитанным. Такой подход помогает привлечь внимание тех, кто по какой-либо причине не открыл первое письмо компании.</p>
+                    <aside>
+                        <p><strong>Важно отслеживать статистику и делать дополнительную рассылку по непрочитанным.</strong></p>
+                    </aside>
+                    <p>Теперь, давайте посмотрим, как может выглядеть подобная автоворонка продаж с использованием чат-бота</p>
+                    <ul>
+                        <li><strong>Реклама в Facebook с кнопкой перехода в мессенджер</strong><br>Для привлечения внимания целевой аудитории, клиентам предлагают подарок в виде полезной PDF-книги или чек-листа. После перехода в Facebook Messenger подписчик знакомится с чат-ботом, узнает подробнее о программе вебинара и получает обещанный подарок.</li>
+                        <li><strong>Цепочка сообщений чат-бота</strong><br>На следующий день, клиент получает рассылку с предложением узнать больше о преподавателе и получить полезные рекомендации от него. Согласно правилам Facebook, бесплатно коммуницировать с клиентом в мессенджере можно только в рамках 24 часов. После каждого взаимодействия с чат-ботом отсчет времени начинается заново. Поэтому, для коммуникации с клиентом важно использовать кнопки, быстрые ответы или команды, которые он будет отправлять чат-боту.</li>
+                        <li><strong>Цепочка сообщений после вебинара</strong><br>В этой рассылке подписчиков благодарят за участие, предлагают заполнить краткую форму обратной связи и взамен получить скидку на полный курс изучения английского.</li>
+                    </ul>
+                    <p>Чтобы клиент не пропустил напоминание в мессенджере о вебинаре, вы можете предложить ему оставить свой номер телефона или email. <span class="highlighted-text">Использование нескольких каналов коммуникации в автоворонке продаж — это омниканальный подход.</span> Он позволяет повысить продажи, уровень удержания покупателей и лояльность за счет создания дополнительных точек касания.</p>
+                    <p>Поскольку омниканальная воронка продаж более эффективна, чем моноканальная, мы расскажем, как ее разработать.</p>
+                    <h3>Как настроить омниканальную автоворонку продаж в SendPulse</h3>
+                    <p>Давайте продолжим тему продвижения курса по изучению английского и создадим автоворонку продаж в сервисе SendPulse. В ней мы объединим лендинг, email рассылки и чат-бота.</p>
+                    <p class="parag-intended">В нашем сценарии мы будем привлекать клиентов через рекламу в Facebook и направлять их на посадочную страницу, где они будут оставлять свои email адреса для участия в вебинаре и получения подарка – PDF-книги.</p>
+                    <p>В последнем письме серии email-рассылок мы предложим участникам ответить на несколько вопросов в Facebook Messenger и получить скидку на покупку курса. Посмотрите на визуальное отображение этой модели.</p>
+                    #PHOTO1#
+                    <p>Следуйте пошаговому руководству, чтобы на его основании разработать собственную автоворонку продаж.</p>
+                    <p class="script-top">
+                        <strong>Шаг 1.</strong> Зарегистрируйтесь в SendPulse. Для этого вы можете использовать email, аккаунт в Google или Facebook.
+                    </p>
+                    #PHOTO2#
+                    <p class="script-top">
+                        <strong>Шаг 2.</strong> Создайте адресную книгу для сбора контактов.
+                    </p>
+                    #PHOTO3#
+                    <p>В адресную книгу будут попадать все email, полученные из формы подписки на лендинге. Для этого в меню слева выберите вкладку «Адресные книги» и нажмите «Новая адресная книга». В открывшемся окне введите ее название и кликните «Создать». Позже вы сможете его отредактировать.</p>
+                    <p class="script-top">
+                        <strong>Шаг 3.</strong> Подготовьте цепочку писем.
+                    </p>
+                    #PHOTO4#
+                    <p>Теперь давайте подготовим серию из четырех писем. В SendPulse вы можете создать рассылку с нуля или использовать один из более чем 130 готовых шаблонов. Чтобы создать автоматизированную цепочку писем, необходимо в меню слева выбрать вкладку «Авторассылки», затем нажать «Создать авторассылку» и кликнуть Automation 360.</p>
+                    #PHOTO5#
+                    <p>Далее введите название авторассылки, укажите корпоративный email отправителя и имя, выберите язык формы отписки и нажмите «Применить».</p>
+                    #PHOTO6#
+                    <p>Перед вами откроется рабочее поле инструмента Automation 360. В нем вы можете не только создать цепочку писем, но и дополнить ее чат-ботом в мессенджерах.</p>
+                    #PHOTO7#
+                    <p>Чтобы подписчики получали письмо сразу после регистрации, необходимо задать стартовое условие. Кликните на блок «Старт серии», в меню настроек справа выберите «Добавление подписчика», укажите созданную вами адресную книгу и нажмите «Применить».</p>
+                    #PHOTO8#
+                    <p>Теперь из меню слева перетащите блок «Email» и присоедините его к блоку «Старт серии». В меню справа задайте время отправки письма «Сразу», далее добавьте тему, прехедер и выберите шаблон — его вы можете отредактировать на свой вкус. Это будет первое письмо из серии, в котором участники вебинара получат подарок за подписку.</p>
+                    #PHOTO9#
+                    <p>По такому же принципу, создаем остальные письма. Во второй рассылке можно рассказать больше о спикере, а в третьей — напомнить клиентам о вебинаре и сообщить о подарке для всех участников.</p>
+                    <p>Четвертое письмо будет отправлено сразу после проведения вебинара. Мы предложим участникам перейти в Facebook Messenger, ответить на несколько вопросов и получить еще один подарок — скидку на полный курс по изучению английского с преподавателем.</p>
+                    #PHOTO10#
+                    <p>В зависимости от вашего сценария, email цепочка может состоять из пяти и более писем. Главное, чтобы они были релевантны целевой аудитории и подогревали ее интерес к продукту.</p>
+                    <p class="script-top">
+                        <strong>Шаг 4.</strong> Создайте чат-бота.
+                    </p>
+                    #PHOTO11#
+                    <p>Теперь, давайте создадим чат-бота, который поможет нам собрать обратную связь от участников вебинара и подарить скидку. SendPulse позволяет создать чат-бота в WhatsApp, Telegram, ВКонтакте, Facebook Messenger. Для разработки виртуального помощника в верхней строке меню выберите вкладку «Чат-боты», затем «Подключить каналы» и нажмите «Войти через Facebook».</p>
+                    #PHOTO12#
+
+
+                    <aside>
+                        #MINI_IMG1#
+                        <p><strong>Принимайте платежи от учеников со всего мира без проблем.</strong></p>
+                    </aside>
+                    <h4>Современные платежные инструменты</h4>
+                    <p>Для повышения конверсии Monecle предоставляет разнообразные платежные инструменты: рассрочку, возможность покупки курсов в кредит, акции, допродажи, связанные продукты, купоны и другие.</p>
+                    <h4>Возможность подписки</h4>
+                    <p>Полезный функционал, позволяющий увеличивать конверсию и средний чек во многих нишах. Авторы могут продавать доступ к своему контенту по подписке с автопродлением. Ученик оформляет подписку и ежемесячно с его карты списывается определенная сумма.</p>
+                    <h4>Call-центр</h4>
+                    <p>У них есть собственный call-центр, сотрудники которого могут позвонить вашему клиенту, когда он оформил, но не оплатил заказ, или же совершить обзвон по вашей базе. По отзывам авторов конверсия при подключении call-центра начинает расти.</p>
+                    <h4>Служба поддержки</h4>
+                    <p>Выделена как отдельный продающий фактор неслучайно. Дело в том, что сотрудники техподдержки платформы помогают не только авторам, но и покупателям курсов. Все консультации по поводу того «Как купить», «Что нажать», «А где искать» и так далее ложатся именно на них. Авторы, которые сталкивались с валом таких вопросов от своих учеников поймут насколько это важно. Плюс это повышает количество оплат.</p>
+                    <p>Последним по порядку, но не по важности, расскажем про аналитический функционал. Monecle позволяет:</p>
+                    <ol>
+                        <li>Отслеживать данные по utm-меткам;</li>
+                        <li>Оценивать всю статистику по переходам и продажам;</li>
+                        <li>Использовать встроенную CRM-систему.</li>
+                    </ol>
+                    <h2>О стоимости Monecle для авторов курсов</h2>
+                    <p class="parag-intended">У платформы нет абонентской платы. <span class="highlighted-text">Формально комиссия платформы составляет 5% от вашего оборота продаж.</span> Но при этом от 10% до 40% комиссии Вам будет возвращать гарантированный кэшбэк. Уровень кэшбэка зависит не от месячного,а от суммарного оборота, поэтому Вы сами решаете по какому тарифу обменять баллы. Итоговая комиссия составит от 3% до 4,5%.</p>
+                    <aside>
+                        <h3>Без абонентской платы</h3>
+                    </aside>
+                    <p>Но это еще не все. Как мы уже говорили, в Monecle интегрированы платежные решения и, так как у платформы большой объем платежей, все платежи производятся по оптовым, пониженным тарифам.</p>
+                    <p class="highlighted-parag">Простой пример, если вы физическое лицо, то при приеме денег, например, через Robokassa вы будете платить 7% комиссии. А через Monecle - всего 4%.</p>
+                    <p>Как-то сложно? Давайте тогда посчитаем все в цифрах. Предположим, вы физическое лицо и <span class="highlighted-text">ваш оборот продаж 100 тыс.р./месяц.</span>></p>
+                    #PHOTO3#
+                    <p>В итоге при использовании Monecle все ваши траты составят 25 500 руб., а при использовании пары Robokassa + другая платформа траты будут в 2 раза больше. Причем при увеличении вашего оборота на Monecle будет повышаться процент кэшбэка.</p>
+                    <p>Зарегистрируйтесь на платформе прямо сейчас и получите бонус 500 mone (2000 руб. по максимальному тарифу кэшбэка)</p>
+                    <aside>
+                        #MINI_IMG2#
+                        <p><a href="https://wayup.in/library/course6?ref_link=255368" target="_blank">Зарегистрироваться</a></p>
+                    </aside>
+                    <div class="photo"><img src="img/laptop.jpg" alt=""></div>
+                    <section class="blog-detail-info">
+                        <p>Редактор: <b>Лариса Куранова</b></p>
+                        <ul class="list">
+                            <li class="list-item">26.10.2020</li>
+                            <li class="list-item"><i class="icon-blog-views"></i>3 678</li>
+                            <li class="list-item"><i class="icon-blog-comments"></i>4</li>
+                        </ul>
+                        <p>Тэги: <a href="#">#заработок на партнерках</a> <a href="#">#обучение партнеров</a></p>
+                    </section>
+                    <aside class="blog-detail-socials">
+                        <span>Поделиться</span>
+                        <i class="icon-blog-left-long-arrow"></i>
+                        <a href="#"><img src="img/vk.svg" alt=""></a>
+                        <a href="#"><img src="img/fb.svg" alt=""></a>
+                        <a href="#"><img src="img/tw.svg" alt=""></a>
+                    </aside>
+                    <section class="blog-detail-nav">
+                        <a href="#" class="blog-detail-nav-btn btn-prev">
+                            <i class="icon-blog-left-long-arrow"></i>
+                            <span>Ранее</span>
+                            <b>Как выбрать платформу для запуска онлайн-школы</b>
+                        </a>
+                        <a href="#" class="blog-detail-nav-btn btn-next">
+                            <i class="icon-blog-left-long-arrow"></i>
+                            <span>Читайте далее</span>
+                            <b>Как настроить партнерку на GetCourse</b>
+                        </a>
+                    </section>
+                    <section class="blog-detail-comments">
+                        <h4>Комментариев к материалу: 4</h4>
+                        <div class="blog-detail-comment-wrap">
+                            <img src="img/author-img.jpg" />
+                            <div class="blog-detail-comment-info">
+                                <b>Лариса Куранова</b><span>26.10.2020 09:06</span>
+                                <p class="blog-detail-comment-content">Был ли у вас опыт съемки собственных видеоуроков? Буду рада если вы поделитесь своим мнением.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer blog-section">
+        <div class="container">
+            <img src="../img/footer-logo.svg" alt="Логотип" class="footer-logo">
+            <nav class="footer-menu">
+                <a href="#" class="footer-menu-item">О проекте</a>
+                <a href="#" class="footer-menu-item">Команда</a>
+                <a href="#" class="footer-menu-item">Сотрудничество</a>
+                <a href="#" class="footer-menu-item">Вакансии</a>
+                <a href="#" class="footer-menu-item">Политика конфиденциальности</a>
+            </nav>
+            <p class="footer-copyright">Любое использование или копирование материалов сайта, элементов дизайна и оформления допускается лишь с разрешения правообладателя и только со ссылкой на источник: info-hit.ru<br /><span>© ООО «ИнфоХит», 2012 — 2020</span></p>
+        </div>
+    </footer>
+    <script src="../js/app.js"></script>
+    <script src="../../../js/swiper/swiper-bundle.min.js"></script>
+    <script src="../../../js/swiper/swiper.js"></script>
+</body>
+</html>

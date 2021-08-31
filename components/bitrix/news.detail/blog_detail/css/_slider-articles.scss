@@ -1,0 +1,193 @@
+.blog-detail-new {
+    padding: 100px 15px 60px 25px;
+    overflow-x: hidden;
+    .swiper {
+        &-container {
+            width: 100%;
+            overflow-wrap: normal;
+            overflow-x: visible !important;
+            overflow-y: visible !important;
+            h2 {
+                font-size: 2.8em;
+                margin: 100px 0 30px;
+            }
+
+            .filter {
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+            }
+        }
+
+        &-wrapper {
+            position: relative;
+            height: 410px;
+            margin-top: 30px;
+
+            &-wrap {
+                display: flex;
+                position: absolute;
+            }
+            .visible {
+                opacity: 1;
+            }
+        }
+
+        &-slide {
+            width: 316px;
+            height: 410px;
+            border-radius: 4px;
+            background: no-repeat center;
+            background-size: cover;
+            color: #FFFFFF;
+            opacity: .4;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 25px 20px;
+
+            .list {
+                margin-bottom: 15px;
+                justify-content: left;
+
+                &-item:nth-of-type(2) {
+                    width: 100px;
+                }
+            }
+
+            span {
+                font-family: $blog-second-font-italic;
+                font-size: 0.94em;
+                color: #FED036;
+            }
+
+            &-title {
+                font-family: $blog-font-black;
+                font-size: 1.47em;
+                line-height: 1.2em;
+                margin-bottom: 35px;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -20px;
+                    width: 70px;
+                    height: 1px;
+                    background: rgba(255, 255, 255, 0.5);
+                }
+            }
+
+            p {
+                font-family: $blog-second-font;
+                line-height: 1.2em;
+            }
+
+            &-bottom {
+                margin-top: auto;
+            }
+            &-title, p, &-bottom {
+                z-index: 1;
+            }
+            &-visible {
+                opacity: 1;
+            }
+        }
+
+        &-button {
+            &-prev, &-next {
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+                line-height: 80px !important;
+                font-size: 35px;
+                text-align: center;
+                background: rgba(#000000, 0.78);
+                border-radius: 50%;
+                color: #FFFFFF;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            &-prev {
+                left: -50px;
+                transform: rotate(180deg);
+            }
+
+            &-next {
+                right: -50px;
+            }
+            &-disabled {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 1440px) {
+    .blog-detail-new .swiper-button {
+        &-next {
+            right: 0;
+        }
+        &-prev {
+            left: 0;
+        }
+
+    }
+}
+@media (max-width: 992px) {
+    .blog-detail-new {
+        padding-top: 70px;
+        .swiper-container h2 {
+            font-size: 2.14em;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .blog-detail-new {
+        padding: 50px 13px 30px;
+        .swiper {
+            &-container {
+
+                h2 {
+                    font-size: 1.47em;
+                    margin: 50px 0 20px;
+                }
+            }
+            &-slide {
+                width: 277px;
+                height: 360px;
+                .list-item i {
+                    font-size: 21px;
+                }
+
+                &-title {
+                    font-size: 1.2em;
+                }
+
+                p {
+                    font-size: 0.87em;
+                }
+
+                span {
+                    font-size: 0.8em;
+                }
+            }
+            &-button {
+                &-prev, &-next {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 580px) {
+    .blog-detail-new .swiper-slide-next {
+        opacity: .7;
+    }
+}

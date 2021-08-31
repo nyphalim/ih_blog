@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/font-icomoon.css">
+    <link rel="stylesheet" href="../css/font-icomoon-blog.css">
+    <link rel="stylesheet" href="../../../js/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../main.css">
+    <title>Блог ИнфоХит</title>
+    <style>
+        @font-face {
+            font-family: 'Formular';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400;
+            src: url('../fonts/Formular/Formular.eot');
+            src: local('Formular'), local('Formular-Regular'),
+            url('../fonts/Formular/Formular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Formular/Formular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Formular/Formular.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Formular/Formular.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'FormularBlack';
+            font-display: swap;
+            font-style: normal;
+            font-weight: normal;
+            src: url('../fonts/Formular/FormularBlack/Formular-Black.eot'); /* IE9 Compat Modes */
+            src: local('Formular-Black'),
+            url('../fonts/Formular/FormularBlack/Formular-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Formular/FormularBlack/Formular-Black.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Formular/FormularBlack/Formular-Black.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Formular/FormularBlack/Formular-Black.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'FormularBold';
+            font-display: swap;
+            font-style: normal;
+            font-weight: bold;
+            src: url('../fonts/Formular/FormularBold/Formular-Bold.eot'); /* IE9 Compat Modes */
+            src: local('Formular-Bold'),
+            url('../fonts/Formular/FormularBold/Formular-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Formular/FormularBold/Formular-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Formular/FormularBold/Formular-Bold.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Formular/FormularBold/Formular-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaPro';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400;
+            src: url('../fonts/LavaPro/LavaPro-Regular.eot'); /* IE9 Compat Modes */
+            src: local('LavaPro'), local('LavaPro-Regular'),
+            url('../fonts/LavaPro/LavaPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaPro-Regular.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaPro-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaProItalic';
+            font-display: swap;
+            font-style: italic;
+            font-weight: 400;
+            src: url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.eot'); /* IE9 Compat Modes */
+            src: local('Lava Pro Regular Italic'), local('Lava-Pro-Regular-Italic'),
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaProBold';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 800;
+            src: url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.eot'); /* IE9 Compat Modes */
+            src: local('LavaPro-Bold'),
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaProHeavy';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 900;
+            src: url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.eot'); /* IE9 Compat Modes */
+            src: local('LavaPro-Heavy'),
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('../fonts/icomoon/icomoon.eot?bswf9v');
+            src:  url('../fonts/icomoon/icomoon.eot?bswf9v#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon/icomoon.ttf?bswf9v') format('truetype'),
+            url('../fonts/icomoon/icomoon.woff?bswf9v') format('woff'),
+            url('../fonts/icomoon/icomoon.svg?bswf9v#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        @font-face {
+            font-family: 'icomoon-blog';
+            src:  url('../fonts/icomoon-blog/icomoon.eot?bswf9v');
+            src:  url('../fonts/icomoon-blog/icomoon.eot?bswf9v#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon-blog/icomoon.ttf?bswf9v') format('truetype'),
+            url('../fonts/icomoon-blog/icomoon.woff?bswf9v') format('woff'),
+            url('../fonts/icomoon-blog/icomoon.svg?bswf9v#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="header entered transparent">
+        <div class="header-menu-wrap">
+            <a href="#" class="header-logo"><img src="../img/header-logo.svg" alt=""><span style="background-image: url('../img/logo-mobile.svg')"></span></a>
+            <nav class="header-menu">
+                <a href="#" class="header-menu-item">Каталог курсов</a>
+                <a href="#" class="header-menu-item">Авторы</a>
+                <a href="#" class="header-menu-item">Онлайн-школы</a>
+                <a href="#" class="header-menu-item">События</a>
+                <a href="#" class="header-menu-item">Блог</a>
+            </nav>
+            <button class="btn header-search-icon" id="header-search">
+                <i class="icon-blog-magnifiying-glass"></i>
+                <i class="icon-blog-exit"></i>
+            </button>
+            <div class="header-enter">
+                <button class="btn header-enter-btn">Войти</button>
+                <div class="header-user">
+                    <button class="btn header-user-menu-btn" id="user-menu">
+                        <img src="../img/user.jpg" class="header-user-img"/>
+                        <i class="icon-blog-arrow-down"></i>
+                    </button>
+                    <ul class="header-user-menu" style="display: none">
+                        <li class="header-user-menu-item"><a href="">Личный кабинет</a></li>
+                        <li class="header-user-menu-item"><a href="">Настройки аккаунта</a></li>
+                        <li class="header-user-menu-item header-user-exit"><a href=""><i class="icon-blog-login"></i>Выйти</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn header-mobile-menu-btn" id="open-mobile-menu"><i class="icon-blog-mobile-menu"></i></button>
+        </div>
+        <div class="header-search-wrap" style="display: none">
+            <input type="text" class="header-search-field" name="blog-search" id="blog-search">
+            <button type="submit" class="btn header-search-btn" value="Искать"><i class="icon-blog-magnifiying-glass"></i></button>
+        </div>
+        <section class="mobile-menu" style="display: none">
+            <div class="mobile-menu-header">
+                <img class="mobile-menu-header-logo" src="../img/logo-yellow.svg" alt="Логотип ИнфоХит" />
+                <button class="btn close-btn" id="close-mobile-menu"><i class="icon-blog-exit"></i></button>
+            </div>
+            <div class="mobile-menu-user">
+                <a href="#" class="mobile-menu-login"><i class="icon-blog-login"></i>Войти</a>
+                <a href="#" class="mobile-menu-user-info" id="mobile-user-btn">
+                    <div class="mobile-menu-user-img">
+                        <img src="../img/user.jpg" />
+                        <span class="mobile-menu-user-name">Антон</span>
+                    </div>
+                    <i class="icon-blog-arrow-down"></i>
+                </a>
+                <ul class="mobile-menu-user-props" style="display: none">
+                    <li class="mobile-menu-user-item"><a>Личный кабинет</a></li>
+                    <li class="mobile-menu-user-item"><a>Настройки аккаунта</a></li>
+                    <li class="mobile-menu-user-item mobile-menu-user-exit"><a><i class="icon-blog-login"></i>Выйти</a></li>
+                </ul>
+            </div>
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-list-item"><a href="#">Каталог курсов</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Авторы</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Онлайн-школы</a></li>
+                <li class="mobile-menu-list-item"><a href="#">События</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Блог</a></li>
+            </ul>
+            <a href="#" class="mobile-menu-bottom-list">О проекте</a>
+            <a href="#" class="mobile-menu-bottom-list">Сотрудничество</a>
+        </section>
+    </header>
+    <div class="overlay" style="display: none"></div>
+    <main>
+        <section class="blog-detail-cover" style="background-image: url('img/top-bg.jpg');">
+            <div class="blog-detail-cover-filter" style="background-color: #ad6220; opacity: 0.85;"></div>
+            <div class="blog-detail-cover-wrap">
+                <div class="container">
+                    <a class="blog-detail-cover-breadcrumb"><i class="icon-blog-left-long-arrow"></i>Интернет маркетинг</a>
+                    <ul class="blog-detail-cover-data list">
+                        <li class="list-item">26.10.2020</li>
+                        <li class="list-item"><i class="icon-blog-views"></i>3 678</li>
+                        <li class="list-item"><i class="icon-blog-comments"></i>4</li>
+                    </ul>
+                    <h1 class="blog-detail-cover-title">Как снимать видеоуроки для курсов. 9 правил, о которых вы не задумывались</h1>
+                    <p class="blog-detail-cover-subtitle">Разбираемся, как записывать видеоуроки, чтобы сэкономить время и деньги на создании собственной онлайн-школы.</p>
+                </div>
+            </div>
+        </section>
+        <section class="blog-detail-container">
+            <div class="container">
+                <article class="blog-detail-content">
+                    <p>На какие моменты стоит обратить внимание, снимая видео для курса? О необходимости записывать в высоком качестве говорить не будем. Это само собой разумеется, ведь мы живем в эпоху YouTube, когда даже дети научились делать качественный видеоконтент.</p>
+                    <section class="blog-detail-author">
+                        <div class="blog-detail-author-item">
+                            <div><img src="img/author-img.jpg" alt="Автор материала: Лариса Куранова"></div>
+                            <div>
+                                <div class="blog-detail-author-name">Лариса Куранова</div>
+                                <span>Редактор ИнфоХит</span>
+                            </div>
+                        </div>
+                    </section>
+                    <p>Федеральный закон №422-ФЗ появился 1 января 2019 года. Сначала его запустили в «режиме тестирования» в 4 регионах России. И только с 1 июля 2020 года любой человек, который работает на себя и желает платить налог на профессиональный доход (НПД), может пополнить ряды самозанятых.</p>
+                    <p>Для легальной работы в России самозанятыми могут стать граждане <span class="highlighted-text">стран Евразийского союза.</span> Только сперва необходимо получить ИНН, который потребуется для регистрации в сервисе «Мой налог».</p>
+                    <aside>
+                        <p><strong>Беларусь, Армения, Казахстан и Киргизия – страны ЕАЭС помимо РФ.</strong></p>
+                    </aside>
+                    <p class="parag-intended">Стать самозанятым – значит узаконить деятельность и доходы. Это значит, что вы работаете на себя без найма сотрудников, платите НПД со всех поступлений.</p>
+                    <h2>О преимуществах для самозанятых</h2>
+                    <ul>
+                        <li><strong>Минимальная налоговая ставка</strong><br>4 % от суммы, если денежные средства поступили от физического лица и 6 %, если – от организаций. Важно помнить, что НПД нужно платить только за те месяцы, в которых вы работали.</li>
+                        <li><strong>Не надо идти в налоговую</strong></br>Вы можете стать самозанятым не выходя из дома, через специальное приложение на телефоне или ПК.</li>
+                        <li><strong>Не надо сдавать отчетность</strong></br>Налоговой автоматически приходят все отчеты по вашей деятельности.</li>
+                        <li><strong>Не нужна касса</strong></br>Все чеки можно оформить через приложение «Мой налог». Клиент оплачивает удобным способом (наличными, переводом на электронный кошелек или карту) и получает свой чек.</li>
+                        <li><strong>Налог начисляется автоматически</strong></br>Ежемесячно в приложении приходят уведомления о той сумме, которую надо оплатить. Для удобства все платежные операции в налоговую проводятся онлайн.</li>
+                        <li><strong>Можно совмещать с основной работой</strong></br>Правда доход от работодателя не попадает под налоговый режим самозанятости. Это значит, что платить с зарплаты 6 %, как на НПД, не получится.</li>
+                        <li><strong>Не надо платить страховые и пенсионные взносы</strong></br>Самозанятый сам выбирает делать ли отчисления в ПФР или ФСС. Если вы все-таки за то, чтобы платить взносы, то просто подайте заявление.</li>
+                        <li><strong>Можно работать по всей стране</strong></br>Если вы регистрируетесь как самозанятый в определенном регионе, то без ограничений можете работать по всей стране.</li>
+                    </ul>
+                    <p><span class="highlighted-text">Каждый самозанятый может получить вычет в размере 10 000 рублей.</span> Это бонус от государства, который дается один раз. Никаких документов оформлять не надо, так как вычет на время понижает налоговую ставку (3 % для физических лиц и 4 % от ИП и юридических лиц). После того, как самозанятый сэкономил 10 000 рублей, ставка возвращается к стандартному размеру.</p>
+                    <h3>Как оформить самозанятость?</h3>
+                    <p>Вы можете стать самозанятым, воспользовавшись одним из 4 способов регистрации:</p>
+                    <ol>
+                        <li><span class="highlighted-text">через приложение «Мой налог»</span><br>Скачайте программу и выполните простые действия. Обязательно укажите номер телефона, введите полученный код, отметьте регион, распознайте основную страницу паспорта и добавьте фото, подтверждающее личность. 5 минут и налоговая инспекция автоматически будет уведомлена.</li>
+                        <li><span class="highlighted-text">через «Госуслуги»</span><br>Там нужно сделать те же шаги, что описаны выше, только еще потребуется СНИЛС. Подойдет такой способ лучше для тех, кто уже имеет подтвержденный аккаунт на Госуслугах.</li>
+                        <li><span class="highlighted-text">через сайт ФНС России</span><br>Практически все то же, что и во втором пункте, также потребуется подтвержденный аккаунт на Госуслугах.</li>
+                        <li><span class="highlighted-text">через уполномоченный банк</span><br>Для этого потребуется зайти в приложение банка. Выбираете пункт «Свое дело» и указываете карту. А далее четко следуете по всем этапам оформления, которые там предложены.</li>
+                    </ol>
+                    <p class="highlighted-parag">Четвертый способ регистрации самый выгодный из всех, так как банки предлагают специальные условия и бонусы для самозанятых. Например, скидки на продукты банка или круглосуточные консультации.</p>
+                    <p>Список учреждений, которые обмениваются данными с налоговой, размещен на официальном сайте ФНС. В нем присутствуют такие банки, как:</p>
+                    <ul>
+                        <li>«Тинькофф»;</li>
+                        <li>«Альфа-Банк»;</li>
+                        <li>«Сбербанк»;</li>
+                        <li>«АК Барс»;</li>
+                        <li>«Рокетбанк»;</li>
+                        <li>«ВТБ»;</li>
+                        <li>«Киви»;</li>
+                        <li>«МТС-Банк» и другие.</li>
+                    </ul>
+                    <p>Помните, если какой-то банк предлагает регистрацию на подозрительно выгодных условиях, но его нет в этом списке, то это могут быть мошенники.</p>
+                    <p>После регистрации обязательно укажите вид деятельности (один или несколько) в приложении «Мой налог». По желанию прикрепите карту, с которой планируете платить налог.</p>
+                    <p class="parag-intended">Не забудьте заранее подать уведомление об отказе от других спецрежимов, например, от ИП. Лучше сделать это минимум за месяц, иначе регистрация в качестве плательщика НПД может быть аннулирована.</p>
+                    <p>Итак, регистрация занимает минимум времени. И если вы готовы стать самозанятым, то выбирайте подходящий способ и регистрируйтесь.</p>
+
+
+
+
+
+                    <p>Для того чтобы у инфобизнесменов и уже существующих онлайн-школ была возможность выжить и вынести конкуренцию с крупными игроками, процесс получения Лицензии на образовательную деятельность упростили.</p>
+                    <aside>
+                        <img width="75px" src="https://info-hit.ru/include/images/blog/licensing.svg" alt=""><br>
+                        <p>С 1 января 2021 года стало проще получить лицензию для онлайн-школы.</p>
+                    </aside>
+                    <p class="parag-intended">Ранее получение лицензии было практически невозможно для онлайн-школы из-за одного обязательного условия – наличие помещения, отвечающего ряду жестких требований СЭС, Роспотребнадзора и пр.</p>
+                    <p class="highlighted-parag">С 1 января 2021 года государство даёт возможность онлайн-школам получать лицензии на ведение образовательной деятельности без помещения. Нововведения касаются тех, кто обучает исключительно в сети Интернет.</p>
+                    <p>Упрощенный порядок получения лицензии действует до 31.12.2021 года. А это значит, что  успеть получить лицензию до конца года может практически каждая онлайн-школа. На данный момент нет четкого понимания сохранится ли упрощенная система лицензирования в следующем году. Поэтому лучше получить конкурентное преимущество в числе первых.</p>
+                    <h2>Преимущества лицензированной онлайн-школы</h2>
+                    <ul>
+                        <li>Повышение доверия целевой аудитории к вашему продукту.</li>
+                        <li>Возможность выдавать ученикам документы об окончании обучения «государственного образца».</li>
+                        <li>Использовать образовательную терминологию (переквалификация, получение специальности, профессия, образование, преподаватель).</li>
+                        <li>Проводить проверку знаний учеников и выставлять оценки (промежуточная и итоговая аттестация, тестирование и пр.).</li>
+                        <li>Возможность получения налогового вычета на образование для учеников.</li>
+                    </ul>
+                    <p>В конце концов на рынке онлайн-образования останутся лишь те онлайн-школы, которые со всей серьезностью отнесутся к требованиям государства и будут расти не только расширяя аудиторию, но и повышая свой юридический статус.</p>
+                    <p class="parag-intended">Ну а те предприниматели, которые до сих пор считают, что в интернете никого не проверяют, рискуют остаться ни с чем.</p>
+                    <h3>Кому лицензия точно нужна, а кто может спокойно работать без нее?</h3>
+                    <p>Для начала определим, что когда мы говорим про образование, то мы понимаем это как <strong>оказание услуг</strong>, а не предоставление доступа к видеоурокам или чек-листам. Почему эта разница принципиально важна?</p>
+                    <p class="highlighted-parag">Потому что, если ваш продукт предполагает только доступ к заранее подготовленным материалам, то это лицензионный договор – то есть договор по которому вы предоставляете клиенту право просмотра видеоматериалов. Как билет в кино. В таком случае получать лицензию на образовательную деятельность не нужно.</p>
+                    <p>Также лицензия не нужна экспертам, которые оказывают образовательные услуги в качестве индивидуального предпринимателя и не привлекает других преподавателей/кураторов к процессу обучения.</p>
+                    <p>Если онлайн-школа представляет собой партнерство эксперта и продюсера, то в случае приема денег на счет ИП эксперта, и при отсутствии других преподавателей/кураторов, лицензия также не нужна.</p>
+                    <p class="info-parag">От получения лицензии освобождены все организации, которые ведут образовательную деятельность на территории инновационного центра «Сколково».</p>
+                    <h4>Кому лицензия точно нужна?</h4>
+                    <ul>
+                        <li>Проектам, которые оформлены как юридическое лицо, чаще всего это ООО.</li>
+                        <li>Проектам, где прием платежей от учеников ведется НЕ на счет эксперта (преподавателя).</li>
+                        <li>Проектам, где больше одного эксперта (преподавателя) или есть кураторы.</li>
+                    </ul>
+                    <p class="script-top">Для того, чтобы прямо сейчас понять нужна ли вашему проекту лицензия пройдите по блок-схеме, которую мы подготовили для наших клиентов. Так вы быстрее разберетесь.</p>
+                    <div class="photo"><img src="https://info-hit.ru/include/images/blog/blok-licenze.png" alt=""></div>
+                    <h3>Как получить лицензию?</h3>
+                    <ol>
+                    <li>Составить образовательную программу.</li>
+                    <p class="parag-intended">Не пугайтесь, здесь не будут проверять вашу программу согласно всем критериям построения обучающего процесса и методологии. По сути это документ в котором юридическим языком описывается процесс обучения. То насколько юридически грамотно он составлен влияет на вынесение положительного решения. Программа создается под один продукт. Вам не придется лицензировать каждый свой курс.</p>
+                    <li>Заполнить необходимые формы документов.</li>
+                    <p class="parag-intended">С полным списком необходимых документов вы можете ознакомиться на официальном сайте Министерства образования региона, в котором зарегистрирован ваш бизнес.</p>
+                    <li>Подать заявление со всеми необходимыми приложениями в Министерство образования вашего региона.</li>
+                    </ol>
+                    <h4>Как скоро выдается лицензия?</h4>
+                    <p>3 дня, с момента подачи документов, ведется проверка всех поданных вами документов. <span class="highlighted-text">Проверяют правильность заполнения формы и хватает ли предоставленных документов для рассмотрения вашего заявления.</span></p>
+                    <p>Если все документы в порядке, то в течение 45 дней проводится проверка вашего проекта на соответствие требований законодательства, и выносится положительное решение о выдаче лицензии.</p>
+                    <h4>Сколько стоит получение лицензии?</h4>
+                    <p>Госпошлина составляет 7 500 руб. Плюс еще 3 000 рублей, если вы хотите получить лицензию на бумажном носителе.</p>
+                    <p>Сам документ может быть выдан и в электронной форме. Тогда он будет подписан электронно-цифровой подписью и его предоставление отдельной госпошлиной не облагается.</p>
+                    <p class="info-parag">Конечно проходить всю эту процедуру самостоятельно – это задача не для слабонервных, поэтому инфобизнесмены доверяют ее опытным юристам, специализирующимся на сопровождении онлайн-школ. Потому как только юрист говорит и пишет на языке государственных органов.</p>
+                    <p>Не стоит опасаться процесса получения лицензии. Да, вам придется немного напрячься и собрать необходимую документацию – это факт, но это стандартная процедура для многих бизнесменов. С профессиональной юридической поддержкой у вас все получится.</p>
+                    <section class="blog-detail-integration">
+                        <h4>Статья подготовлена:</h4>
+                        <div class="blog-detail-integration-info">
+                            <img width="100px" src="https://info-hit.ru/include/images/blog/e_volnova.jpg" alt="">
+                            <div class="blog-detail-integration-wrap">
+                                <h6>Евгения Вольнова</h6>
+                                <p>Евгения оказывает юридические услуги онлайн-школам, интернет-проектам и фрилансерам. Начала свою деятельность в инфобизнесе в 2015 году, когда онлайн-школы только начинали своё развитие. Сейчас, она является владелицей своей юридической компании.</p>
+                                <p>В ее постоянном сопровождении более 80 онлайн-проектов среди которых онлайн-школы, инвестиционные компании, продюсерские центры, обучающие платформы и IT-стартапы. Среди них Beketov Group, Accel, Brush Guru, Bubo Unicus, Puzzle Brain, Emdessel, Interra, FIN-RA и др.</p>
+                                <p>Так же Евгения является приглашённым спикером на конференциях и автором онлайн-курса «Юридическая безопасность инфобизнеса». Записала более 75 уроков по повышению юридической грамотности для различных онлайн-школ в жестких нишах. На страницах своего блога Евгения раскрывает все тонкости и особенности законного построения бизнеса и продаж в сети Интернет.</p>
+                            </div>
+                            <a href="https://vk.com/away.php?to=https%3A%2F%2Finstagram.com%2Furistinfobiz%3Figshid%3D1b3hwzu3vuwem&cc_key=" target="_blank">Присоединяйтесь ></a>
+                        </div>
+                    </section>
+                    <section class="blog-detail-info">
+                        <p>Редактор: <b>Лариса Куранова</b></p>
+                        <ul class="list">
+                            <li class="list-item">26.10.2020</li>
+                            <li class="list-item"><i class="icon-blog-views"></i>3 678</li>
+                            <li class="list-item"><i class="icon-blog-comments"></i>4</li>
+                        </ul>
+                        <p>Тэги: <a href="#">#заработок на партнерках</a> <a href="#">#обучение партнеров</a></p>
+                    </section>
+                    <aside class="blog-detail-socials">
+                        <span>Поделиться</span>
+                        <i class="icon-blog-left-long-arrow"></i>
+                        <a href="#"><img src="img/vk.svg" alt=""></a>
+                        <a href="#"><img src="img/fb.svg" alt=""></a>
+                        <a href="#"><img src="img/tw.svg" alt=""></a>
+                    </aside>
+                    <section class="blog-detail-nav">
+                        <a href="#" class="blog-detail-nav-btn btn-prev">
+                            <i class="icon-blog-left-long-arrow"></i>
+                            <span>Ранее</span>
+                            <b>Как выбрать платформу для запуска онлайн-школы</b>
+                        </a>
+                        <a href="#" class="blog-detail-nav-btn btn-next">
+                            <i class="icon-blog-left-long-arrow"></i>
+                            <span>Читайте далее</span>
+                            <b>Как настроить партнерку на GetCourse</b>
+                        </a>
+                    </section>
+                    <section class="blog-detail-comments">
+                        <h4>Комментариев к материалу: 4</h4>
+                        <div class="blog-detail-comment-wrap">
+                            <img src="img/author-img.jpg" />
+                            <div class="blog-detail-comment-info">
+                                <b>Лариса Куранова</b><span>26.10.2020 09:06</span>
+                                <p class="blog-detail-comment-content">Был ли у вас опыт съемки собственных видеоуроков? Буду рада если вы поделитесь своим мнением.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer blog-section">
+        <div class="container">
+            <img src="../img/footer-logo.svg" alt="Логотип" class="footer-logo">
+            <nav class="footer-menu">
+                <a href="#" class="footer-menu-item">О проекте</a>
+                <a href="#" class="footer-menu-item">Команда</a>
+                <a href="#" class="footer-menu-item">Сотрудничество</a>
+                <a href="#" class="footer-menu-item">Вакансии</a>
+                <a href="#" class="footer-menu-item">Политика конфиденциальности</a>
+            </nav>
+            <p class="footer-copyright">Любое использование или копирование материалов сайта, элементов дизайна и оформления допускается лишь с разрешения правообладателя и только со ссылкой на источник: info-hit.ru<br /><span>© ООО «ИнфоХит», 2012 — 2020</span></p>
+        </div>
+    </footer>
+    <script src="../js/app.js"></script>
+    <script src="../../../js/swiper/swiper-bundle.min.js"></script>
+    <script src="../../../js/swiper/swiper.js"></script>
+</body>
+</html>

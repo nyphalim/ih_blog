@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/font-icomoon.css">
+    <link rel="stylesheet" href="../css/font-icomoon-blog.css">
+    <link rel="stylesheet" href="../../../js/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../main.css">
+    <title>Блог ИнфоХит</title>
+    <style>
+        @font-face {
+            font-family: 'Formular';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400;
+            src: url('../fonts/Formular/Formular.eot');
+            src: local('Formular'), local('Formular-Regular'),
+            url('../fonts/Formular/Formular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Formular/Formular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Formular/Formular.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Formular/Formular.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'FormularBlack';
+            font-display: swap;
+            font-style: normal;
+            font-weight: normal;
+            src: url('../fonts/Formular/FormularBlack/Formular-Black.eot'); /* IE9 Compat Modes */
+            src: local('Formular-Black'),
+            url('../fonts/Formular/FormularBlack/Formular-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Formular/FormularBlack/Formular-Black.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Formular/FormularBlack/Formular-Black.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Formular/FormularBlack/Formular-Black.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'FormularBold';
+            font-display: swap;
+            font-style: normal;
+            font-weight: bold;
+            src: url('../fonts/Formular/FormularBold/Formular-Bold.eot'); /* IE9 Compat Modes */
+            src: local('Formular-Bold'),
+            url('../fonts/Formular/FormularBold/Formular-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Formular/FormularBold/Formular-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Formular/FormularBold/Formular-Bold.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Formular/FormularBold/Formular-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaPro';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400;
+            src: url('../fonts/LavaPro/LavaPro-Regular.eot'); /* IE9 Compat Modes */
+            src: local('LavaPro'), local('LavaPro-Regular'),
+            url('../fonts/LavaPro/LavaPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaPro-Regular.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaPro-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaProItalic';
+            font-display: swap;
+            font-style: italic;
+            font-weight: 400;
+            src: url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.eot'); /* IE9 Compat Modes */
+            src: local('Lava Pro Regular Italic'), local('Lava-Pro-Regular-Italic'),
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaProBold';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 800;
+            src: url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.eot'); /* IE9 Compat Modes */
+            src: local('LavaPro-Bold'),
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaProHeavy';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 900;
+            src: url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.eot'); /* IE9 Compat Modes */
+            src: local('LavaPro-Heavy'),
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('../fonts/icomoon/icomoon.eot?bswf9v');
+            src:  url('../fonts/icomoon/icomoon.eot?bswf9v#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon/icomoon.ttf?bswf9v') format('truetype'),
+            url('../fonts/icomoon/icomoon.woff?bswf9v') format('woff'),
+            url('../fonts/icomoon/icomoon.svg?bswf9v#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        @font-face {
+            font-family: 'icomoon-blog';
+            src:  url('../fonts/icomoon-blog/icomoon.eot?bswf9v');
+            src:  url('../fonts/icomoon-blog/icomoon.eot?bswf9v#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon-blog/icomoon.ttf?bswf9v') format('truetype'),
+            url('../fonts/icomoon-blog/icomoon.woff?bswf9v') format('woff'),
+            url('../fonts/icomoon-blog/icomoon.svg?bswf9v#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="header entered transparent">
+        <div class="header-menu-wrap">
+            <a href="#" class="header-logo"><img src="../img/header-logo.svg" alt=""><span style="background-image: url('../img/logo-mobile.svg')"></span></a>
+            <nav class="header-menu">
+                <a href="#" class="header-menu-item">Каталог курсов</a>
+                <a href="#" class="header-menu-item">Авторы</a>
+                <a href="#" class="header-menu-item">Онлайн-школы</a>
+                <a href="#" class="header-menu-item">События</a>
+                <a href="#" class="header-menu-item">Блог</a>
+            </nav>
+            <button class="btn header-search-icon" id="header-search">
+                <i class="icon-blog-magnifiying-glass"></i>
+                <i class="icon-blog-exit"></i>
+            </button>
+            <div class="header-enter">
+                <button class="btn header-enter-btn">Войти</button>
+                <div class="header-user">
+                    <button class="btn header-user-menu-btn" id="user-menu">
+                        <img src="../img/user.jpg" class="header-user-img"/>
+                        <i class="icon-blog-arrow-down"></i>
+                    </button>
+                    <ul class="header-user-menu" style="display: none">
+                        <li class="header-user-menu-item"><a href="">Личный кабинет</a></li>
+                        <li class="header-user-menu-item"><a href="">Настройки аккаунта</a></li>
+                        <li class="header-user-menu-item header-user-exit"><a href=""><i class="icon-blog-login"></i>Выйти</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn header-mobile-menu-btn" id="open-mobile-menu"><i class="icon-blog-mobile-menu"></i></button>
+        </div>
+        <div class="header-search-wrap" style="display: none">
+            <input type="text" class="header-search-field" name="blog-search" id="blog-search">
+            <button type="submit" class="btn header-search-btn" value="Искать"><i class="icon-blog-magnifiying-glass"></i></button>
+        </div>
+        <section class="mobile-menu" style="display: none">
+            <div class="mobile-menu-header">
+                <img class="mobile-menu-header-logo" src="../img/logo-yellow.svg" alt="Логотип ИнфоХит" />
+                <button class="btn close-btn" id="close-mobile-menu"><i class="icon-blog-exit"></i></button>
+            </div>
+            <div class="mobile-menu-user">
+                <a href="#" class="mobile-menu-login"><i class="icon-blog-login"></i>Войти</a>
+                <a href="#" class="mobile-menu-user-info" id="mobile-user-btn">
+                    <div class="mobile-menu-user-img">
+                        <img src="../img/user.jpg" />
+                        <span class="mobile-menu-user-name">Антон</span>
+                    </div>
+                    <i class="icon-blog-arrow-down"></i>
+                </a>
+                <ul class="mobile-menu-user-props" style="display: none">
+                    <li class="mobile-menu-user-item"><a>Личный кабинет</a></li>
+                    <li class="mobile-menu-user-item"><a>Настройки аккаунта</a></li>
+                    <li class="mobile-menu-user-item mobile-menu-user-exit"><a><i class="icon-blog-login"></i>Выйти</a></li>
+                </ul>
+            </div>
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-list-item"><a href="#">Каталог курсов</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Авторы</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Онлайн-школы</a></li>
+                <li class="mobile-menu-list-item"><a href="#">События</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Блог</a></li>
+            </ul>
+            <a href="#" class="mobile-menu-bottom-list">О проекте</a>
+            <a href="#" class="mobile-menu-bottom-list">Сотрудничество</a>
+        </section>
+    </header>
+    <div class="overlay" style="display: none"></div>
+    <main>
+        <section class="blog-detail-cover" style="background-image: url('img/top-bg.jpg');">
+            <div class="blog-detail-cover-filter" style="background-color: #ad6220; opacity: 0.85;"></div>
+            <div class="blog-detail-cover-wrap">
+                <div class="container">
+                    <a class="blog-detail-cover-breadcrumb"><i class="icon-blog-left-long-arrow"></i>Интернет маркетинг</a>
+                    <ul class="blog-detail-cover-data list">
+                        <li class="list-item">26.10.2020</li>
+                        <li class="list-item"><i class="icon-blog-views"></i>3 678</li>
+                        <li class="list-item"><i class="icon-blog-comments"></i>4</li>
+                    </ul>
+                    <h1 class="blog-detail-cover-title">Как снимать видеоуроки для курсов. 9 правил, о которых вы не задумывались</h1>
+                    <p class="blog-detail-cover-subtitle">Разбираемся, как записывать видеоуроки, чтобы сэкономить время и деньги на создании собственной онлайн-школы.</p>
+                </div>
+            </div>
+        </section>
+        <section class="blog-detail-container">
+            <div class="container">
+                <article class="blog-detail-content">
+                    <p>На какие моменты стоит обратить внимание, снимая видео для курса? О необходимости записывать в высоком качестве говорить не будем. Это само собой разумеется, ведь мы живем в эпоху YouTube, когда даже дети научились делать качественный видеоконтент.</p>
+                    <section class="blog-detail-author">
+                        <div class="blog-detail-author-item">
+                            <div><img src="img/author-img.jpg" alt="Автор материала: Лариса Куранова"></div>
+                            <div>
+                                <div class="blog-detail-author-name">Лариса Куранова</div>
+                                <span>Редактор ИнфоХит</span>
+                            </div>
+                        </div>
+                    </section>
+                    <p>Все началось с дизайнера и разработчика по имени Андрей Гаврилов. В 2015 году, живя в Тайланде и успешно зарабатывая на фрилансе, ему в голову пришла простая мысль: рассказать людям о своем образе жизни и показать другим один из возможных путей развития.</p>
+                    <div class="photo">
+                        <img src="https://info-hit.ru/include/images/blog/gavrilov_400.jpg">
+                        <p>Андрей Гаврилов – основатель WAYUP.</p>
+                    </div>
+                    <p>К тому времени Андрей уже более 6 лет занимался разработкой сайтов, дизайном, версткой, интеграцией систем управления и зарабатывал на фрилансе. Большая часть аудитории знает Андрея по ютуб-каналу под названием WAYUP & Андрей Гаврилов. Именно там он начал публиковать свой первый образовательный видеоконтент на тему дизайна и верстки сайтов, и с него началась вся история проекта WAYUP.</p>
+                    <p class="info-parag">Сегодня WAYUP – это сильный преподавательский состав, 11 глубоких образовательных курсов и новаторский подход к обучению. Есть 3 полноценных курса для бесплатного изучения и регулярные бесплатные мастер-классы. Более 5 000 учеников уже прошли обучение платно и более 20 000 человек зарегистрированы на платформе и учатся бесплатно.</p>
+                    <h2>Место для старта: просто приходи</h2>
+                    <p>Начать знакомство с WAYUP можно на официальном YouTube-канале. За 6 лет на нем скопилась внушительная видеотека знаний. <span class="highlighted-text">Доступ ко всем роликам предоставляется бесплатно.</span> Это отличная возможность для того, чтобы понять, подходит ли вам такой формат.</p>
+                    <p class="parag-intended">Еженедельно преподаватели школы фриланса готовят новые мастер-классы, раскрывающие аспекты дизайна, верстки, программирования и самостоятельных заработков. Мастер-классы можно сравнить с таким популярным направлением, как стримерство.</p>
+                    <p>Единственное, что их отличает – у мастер-классов финал известен заранее. Сайт или страница будут сверстаны, и новые знания перейдут от опытного преподавателя к зрителям. Такие открытые уроки всегда имеют прикладной практический формат. Ролики, с заранее подготовленными, качественными материалами за одну встречу полностью раскрывают заявленную тему. Например, как сделать в Figma дизайн первого экрана с WOW-эффектом.</p>
+                    <h3>Не классический университет</h3>
+                    <p>WAYUP любит эксперименты, в том числе и с новыми информационными форматами. Есть такое понятие как <span class="highlighted-text">edutaiment (education + entertainment) – это образование и развлечение в одном.</span> Совсем недавно на ютуб-канале школы вышел спецпроект под названием «Вечерняя школа», как раз сделан с учетом этой тенденции.</p>
+                    <p>Его цель – новый, более живой, цепляющий способ подачи информации. Спецпроект интегрировал в себе методики классического образования, шоу и элементы театральной постановки. В нем в пяти выпусках подробно раскрывается тема веб-дизайна. Преподавателям школы не удалось отразить все аспекты предмета за один сезон, поэтому к выпуску готовится второй цикл шоу.</p>
+                    <p class="highlighted-parag">«Вечерняя школа» – это бесплатный проект. Подробно изучив все 5 выпусков первого сезона можно сделать с нуля свой первый дизайн, свою первую вёрстку, а также улучшить то, что человек умел делать до этого.</p>
+                    <h3>Хочу учиться. Платить пока нечем</h3>
+                    <p>Если вы познакомились с каналом образовательной платформы на ютуб, и поняли, что формат подачи информации в WAYUP вам понятен и подходит – можно двигаться дальше. <span class="highlighted-text">Школа предлагает 3 бесплатных курса: «Веб-дизайнер: Взрывной старт», «Веб-верстальщик: Начало», «Погружение».</span></p>
+                    <p>Это три полноценные программы, с проверкой домашних заданий и чатами с профессиональными наставниками. Обучение на них позволяет определиться с выбором новой профессии, ответить на вопрос: хотите ли вы действительно развиваться в этой области? На этом этапе свои финансовые ресурсы в студентов вкладывает только школа.</p>
+                    <p class="parag-intended">После успешного прохождения курса выпускник уже знаком с базовыми знаниями, оперирует терминами и понятиями и может дальше определяться, какой курс он бы хотел пройти более глубоко. На последних занятиях бесплатных курсов «Веб-дизайнер: Взрывной старт» и «Веб-верстальщик: Начало» студенты делают несколько работ для своего портфолио и узнают, как зарабатывать на фрилансе.</p>
+                    <p>Бывает так, что хочется еще что-то посмотреть. Тогда заходите на сайт WAYUP, прокрутите страницу вниз до самого конца и увидите ссылки на бесплатные материалы, их там много и на различные темы.</p>
+                    <aside><a href="https://wayup.in/library/course6?ref_link=255368" target="_blank">Начните бесплатно с курса «Взрывной старт»</a></aside>
+                    <h2>Почему именно WAYUP?</h2>
+                    <p>Здесь работают на результат. И он заключается не в том, чтобы студент просто получил сертификат. Школа учит практическим навыкам и заработку на них. Для этого методисты постоянно разрабатывают новые форматы, усиливают понимание и подачу, отслеживают сложные уроки и делают их проще для изучения. На старте опытные наставники, условно, <span class="highlighted-text">берут студента за руку и помогают двигаться от урока к уроку.</span></p>
+                    <p>Наставники школы обладают опытом и экспертизой в закрепленной за ними темой. Оказывают не только групповые, но и личные консультации. Проверка домашних заданий происходит в формате видеоразбора. Стоит отметить, что бесплатные курсы также сопровождаются проверкой домашних заданий и сопровождением наставников.</p>
+                    <h3>Кто проводит обучение?</h3>
+                    <p>WAYUP сегодня – это не только Андрей Гаврилов. За последние 3 года школа пополнилась новыми именами преподавателей, что позволило добавить в образовательный процесс дополнительные направления. Приглашенные эксперты школы проходят сложный, многоступенчатый отбор, и Андрей Гаврилов лично несет ответственность за уровень компетенции каждого из них.</p>
+                    <p class="highlighted-parag">Во-первых, оцениваются их достижения в специальности. Во-вторых, внимание обращают на опыт работы на фрилансе. В-третьих, человек должен уметь общаться и доносить информацию.</p>
+                    <p><strong>Алексей Фанкин</strong>, до прихода на образовательную платформу WAYUP уже обладал крутым опытом в области графического дизайна. Работал с крупными клиентами, побеждал в конкурсах. Он фрилансер из Москвы. И последние три года до преподавания зарабатывал отличные деньги без обращения к биржам, просто на сарафанном радио. У него было желание преподавать. В этом человеке сошлось все: профессионализм, отличная подача и умение вести себя в кадре.</p>
+                    <aside>
+                        <img width="100px" src="https://info-hit.ru/include/images/blog/fankin_3.png" alt=""><br>
+                        <p>Алексей Фанкин</p>
+                    </aside>
+                    <aside>
+                        <img width="100px" src="https://info-hit.ru/include/images/blog/demin.png" alt=""><br>
+                        <p>Сергей Дёмин</p>
+                    </aside>
+                    <p><strong>Сергей Дёмин</strong>, до прихода в команду WAYUP работал frontend-разработчиком в компании Harman Kardon (это та компания, которая делает всем известные JBL-колонки). Этот человек сделал себя сам. Сейчас он также практикует в X5 Retail Group (группа компаний, в которую входит «Пятёрочка» и др.). Его профессиональные качества не вызывали сомнений, оставалось удостовериться, что общается и доносит информацию он тоже на высшем уровне. В этом человеке сошлись все три критерия и его пригласили в команду.</p>
+                    <p><strong>Михаил Протосевич</strong>, который ведет сейчас курс по PHP, обладает знаниями от фронтенда до бэкенда. Несколько раз становился победителем на российском чемпионате WorldSkills, был в жюри и тренером команды по Красноярскому краю. Кроме этого, он потрясающе общается. Невзирая на стереотип, что все айтишники интроверты, на него приятно смотреть и слушать. Студенты оставляют на него восторженную обратную связь.</p>
+                    <aside>
+                        <img width="100px" src="https://info-hit.ru/include/images/blog/protosevich.png" alt=""><br>
+                        <p>Михаил Протосевич</p>
+                    </aside>
+                    <h3>Всех ли ждет успех?</h3>
+                    <p>Ждет он, безусловно, всех. Вопрос лишь в том, кому хватит сил и желания до него дойти. Пройти три месяца обучения и не остановиться на полпути – не такая уж и простая задача. Над ней в WAYUP работает целая команда наставников. За годы работы они выяснили, что для успешного выхода на фриланс и получения возможности изменить жизнь, развивать нужно не только профессиональные навыки, но и личностные.</p>
+                    <p class="parag-intended">Параллельно с основным обучением в онлайн-школе развивают такие качества, как целеустремленность, умение следовать алгоритму, проходить уроки, выполнять домашние задания и не унывать. Одно дело, когда студент неделю учится и не унывает, а, другое – три месяца учиться и научиться не унывать. Это большой вызов для многих. На первом вводном уроке WAYUP озвучивает одну простую мысль: «Этот курс может быть самым лучшим курсом в мире. Но только, если вы сами этого захотите. Со своей стороны образовательная платформа сделает все возможное, чтобы вы смогли добиться успеха».</p>
+                    <h4>Статистика перемен</h4>
+                    <p>Если взять 100 человек, поступивших на обучение дизайну, которые не ленились, полностью придерживались методики, рекомендованной на обучении, то 30 из них за полгода-год выходят на ежемесячные заработки в размере 100-120 тысяч рублей. Еще примерно 30 студентов за год научатся зарабатывать до 50 тысяч рублей в месяц. Остальные смогут получить чуть меньше заказов или совсем откажутся от идеи зарабатывать на фрилансе. Многое будет зависеть от человека. И как бы WAYUP не мотивировал учеников, все равно будут разные результаты. Например, не менее 5% обучающихся стабильно не доходят до конца обучения.</p>
+                    <aside>
+                    <h4>60% учеников выходят на стабильный доход за полгода-год.</h4>
+                    </aside>
+                    <h4>Какие качества помогают дойти до конца?</h4>
+                    <p>На этот вопрос у команды WAYUP сформировалось мнение, основанное на 6 годах опыта преподавания и выпуска специалистов в веб-дизайне. <span class="highlighted-text">Большего успеха достигают те, у кого наиболее четко сформулирована цель жизни.</span> Они могут быть не самыми способными или талантливыми, но понимающими зачем они идут, какую проблему собираются решить. Если человек берет кредит – это самый целеустремленный человек, и он входит в те первые 30 человек, достигающих высоких результатов.</p>
+                    <h4>Как быстро можно начать зарабатывать?</h4>
+                    <p>Выпускники школы – специалисты в разработке, программировании, дизайне и иллюстрации. Знания, полученные во время обучения, позволяют начать свой путь в профессии и ничему дополнительно в этой теме не доучиваться. Первые финансовые результаты могут быть уже на второй неделе обучения на полноценном курсе. Заработок в 500 или 2000 рублей за первый опыт в новой специальности вполне реальный результат.</p>
+                    <p class="highlighted-parag">Далее оплаты растут. С каждым месяцем, с каждой неделей, улучшается понимание того, как правильно общаться с клиентами. В теории финансовые успехи должны расти постоянно, регулярно, из месяца в месяц в течение первых двух лет после выхода на фриланс. Если это не так, значит стоит пересмотреть теорию.</p>
+                    <p>Есть и второй путь реализации после обучения на образовательной платформе WAYUP. Некоторые выпускники успешно трудоустраиваются на работу в компанию по новой специальности. По статистике около 85% из тех, кто зарабатывает после окончания обучения, делают это на фрилансе.</p>
+                    <h2>Пора сделать шаг с WAYUP</h2>
+                    <p>Глобальная цель WAYUP – <span class="highlighted-text">дать человеку возможность изменить собственную жизнь.</span> Для перемен необходим мощный рычаг, и он должен влиять на значительную часть жизни. Восемь часов в день и более среднестатистический человек проводит на работе. Если поменять работу на лучшую – всё вокруг тоже преобразится. Такой теории придерживаются в онлайн-школе WAYUP, и она подтверждается на опыте их студентов. Пройдя обучение на этой образовательной платформе, люди наконец-то находят заказы для души и творческой самореализации на фрилансе. Если вы давно думаете о переменах, то сейчас самое время действовать.</p>
+                    <aside>
+                        <img src="https://info-hit.ru/include/images/blog/wayyup.png" alt=""><br>
+                        <p><a href="https://wayup.in/library/course6?ref_link=255368" target="_blank">Начните бесплатно с курса «Взрывной старт»</a></p>
+                    </aside>
+                    <div class="photo"><img src="img/laptop.jpg" alt=""></div>v class="photo"><img src="img/laptop.jpg" alt=""></div>
+                    <section class="blog-detail-info">
+                        <p>Редактор: <b>Лариса Куранова</b></p>
+                        <ul class="list">
+                            <li class="list-item">26.10.2020</li>
+                            <li class="list-item"><i class="icon-blog-views"></i>3 678</li>
+                            <li class="list-item"><i class="icon-blog-comments"></i>4</li>
+                        </ul>
+                        <p>Тэги: <a href="#">#заработок на партнерках</a> <a href="#">#обучение партнеров</a></p>
+                    </section>
+                    <aside class="blog-detail-socials">
+                        <span>Поделиться</span>
+                        <i class="icon-blog-left-long-arrow"></i>
+                        <a href="#"><img src="img/vk.svg" alt=""></a>
+                        <a href="#"><img src="img/fb.svg" alt=""></a>
+                        <a href="#"><img src="img/tw.svg" alt=""></a>
+                    </aside>
+                    <section class="blog-detail-nav">
+                        <a href="#" class="blog-detail-nav-btn btn-prev">
+                            <i class="icon-blog-left-long-arrow"></i>
+                            <span>Ранее</span>
+                            <b>Как выбрать платформу для запуска онлайн-школы</b>
+                        </a>
+                        <a href="#" class="blog-detail-nav-btn btn-next">
+                            <i class="icon-blog-left-long-arrow"></i>
+                            <span>Читайте далее</span>
+                            <b>Как настроить партнерку на GetCourse</b>
+                        </a>
+                    </section>
+                    <section class="blog-detail-comments">
+                        <h4>Комментариев к материалу: 4</h4>
+                        <div class="blog-detail-comment-wrap">
+                            <img src="img/author-img.jpg" />
+                            <div class="blog-detail-comment-info">
+                                <b>Лариса Куранова</b><span>26.10.2020 09:06</span>
+                                <p class="blog-detail-comment-content">Был ли у вас опыт съемки собственных видеоуроков? Буду рада если вы поделитесь своим мнением.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer blog-section">
+        <div class="container">
+            <img src="../img/footer-logo.svg" alt="Логотип" class="footer-logo">
+            <nav class="footer-menu">
+                <a href="#" class="footer-menu-item">О проекте</a>
+                <a href="#" class="footer-menu-item">Команда</a>
+                <a href="#" class="footer-menu-item">Сотрудничество</a>
+                <a href="#" class="footer-menu-item">Вакансии</a>
+                <a href="#" class="footer-menu-item">Политика конфиденциальности</a>
+            </nav>
+            <p class="footer-copyright">Любое использование или копирование материалов сайта, элементов дизайна и оформления допускается лишь с разрешения правообладателя и только со ссылкой на источник: info-hit.ru<br /><span>© ООО «ИнфоХит», 2012 — 2020</span></p>
+        </div>
+    </footer>
+    <script src="../js/app.js"></script>
+    <script src="../../../js/swiper/swiper-bundle.min.js"></script>
+    <script src="../../../js/swiper/swiper.js"></script>
+</body>
+</html>

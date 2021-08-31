@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/font-icomoon.css">
+    <link rel="stylesheet" href="../css/font-icomoon-blog.css">
+    <link rel="stylesheet" href="../../../js/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../main.css">
+    <title>Блог ИнфоХит</title>
+    <style>
+        @font-face {
+            font-family: 'Formular';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400;
+            src: url('../fonts/Formular/Formular.eot');
+            src: local('Formular'), local('Formular-Regular'),
+            url('../fonts/Formular/Formular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Formular/Formular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Formular/Formular.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Formular/Formular.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'FormularBlack';
+            font-display: swap;
+            font-style: normal;
+            font-weight: normal;
+            src: url('../fonts/Formular/FormularBlack/Formular-Black.eot'); /* IE9 Compat Modes */
+            src: local('Formular-Black'),
+            url('../fonts/Formular/FormularBlack/Formular-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Formular/FormularBlack/Formular-Black.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Formular/FormularBlack/Formular-Black.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Formular/FormularBlack/Formular-Black.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'FormularBold';
+            font-display: swap;
+            font-style: normal;
+            font-weight: bold;
+            src: url('../fonts/Formular/FormularBold/Formular-Bold.eot'); /* IE9 Compat Modes */
+            src: local('Formular-Bold'),
+            url('../fonts/Formular/FormularBold/Formular-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Formular/FormularBold/Formular-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Formular/FormularBold/Formular-Bold.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Formular/FormularBold/Formular-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaPro';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400;
+            src: url('../fonts/LavaPro/LavaPro-Regular.eot'); /* IE9 Compat Modes */
+            src: local('LavaPro'), local('LavaPro-Regular'),
+            url('../fonts/LavaPro/LavaPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaPro-Regular.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaPro-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaProItalic';
+            font-display: swap;
+            font-style: italic;
+            font-weight: 400;
+            src: url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.eot'); /* IE9 Compat Modes */
+            src: local('Lava Pro Regular Italic'), local('Lava-Pro-Regular-Italic'),
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaProItalic/LavaPro-RegularItalic.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaProBold';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 800;
+            src: url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.eot'); /* IE9 Compat Modes */
+            src: local('LavaPro-Bold'),
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaProBold/LavaPro-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaProHeavy';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 900;
+            src: url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.eot'); /* IE9 Compat Modes */
+            src: local('LavaPro-Heavy'),
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('../fonts/icomoon/icomoon.eot?bswf9v');
+            src:  url('../fonts/icomoon/icomoon.eot?bswf9v#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon/icomoon.ttf?bswf9v') format('truetype'),
+            url('../fonts/icomoon/icomoon.woff?bswf9v') format('woff'),
+            url('../fonts/icomoon/icomoon.svg?bswf9v#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        @font-face {
+            font-family: 'icomoon-blog';
+            src:  url('../fonts/icomoon-blog/icomoon.eot?bswf9v');
+            src:  url('../fonts/icomoon-blog/icomoon.eot?bswf9v#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon-blog/icomoon.ttf?bswf9v') format('truetype'),
+            url('../fonts/icomoon-blog/icomoon.woff?bswf9v') format('woff'),
+            url('../fonts/icomoon-blog/icomoon.svg?bswf9v#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="header entered transparent">
+        <div class="header-menu-wrap">
+            <a href="#" class="header-logo"><img src="../img/header-logo.svg" alt=""><span style="background-image: url('../img/logo-mobile.svg')"></span></a>
+            <nav class="header-menu">
+                <a href="#" class="header-menu-item">Каталог курсов</a>
+                <a href="#" class="header-menu-item">Авторы</a>
+                <a href="#" class="header-menu-item">Онлайн-школы</a>
+                <a href="#" class="header-menu-item">События</a>
+                <a href="#" class="header-menu-item">Блог</a>
+            </nav>
+            <button class="btn header-search-icon" id="header-search">
+                <i class="icon-blog-magnifiying-glass"></i>
+                <i class="icon-blog-exit"></i>
+            </button>
+            <div class="header-enter">
+                <button class="btn header-enter-btn">Войти</button>
+                <div class="header-user">
+                    <button class="btn header-user-menu-btn" id="user-menu">
+                        <img src="../img/user.jpg" class="header-user-img"/>
+                        <i class="icon-blog-arrow-down"></i>
+                    </button>
+                    <ul class="header-user-menu" style="display: none">
+                        <li class="header-user-menu-item"><a href="">Личный кабинет</a></li>
+                        <li class="header-user-menu-item"><a href="">Настройки аккаунта</a></li>
+                        <li class="header-user-menu-item header-user-exit"><a href=""><i class="icon-blog-login"></i>Выйти</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn header-mobile-menu-btn" id="open-mobile-menu"><i class="icon-blog-mobile-menu"></i></button>
+        </div>
+        <div class="header-search-wrap" style="display: none">
+            <input type="text" class="header-search-field" name="blog-search" id="blog-search">
+            <button type="submit" class="btn header-search-btn" value="Искать"><i class="icon-blog-magnifiying-glass"></i></button>
+        </div>
+        <section class="mobile-menu" style="display: none">
+            <div class="mobile-menu-header">
+                <img class="mobile-menu-header-logo" src="../img/logo-yellow.svg" alt="Логотип ИнфоХит" />
+                <button class="btn close-btn" id="close-mobile-menu"><i class="icon-blog-exit"></i></button>
+            </div>
+            <div class="mobile-menu-user">
+                <a href="#" class="mobile-menu-login"><i class="icon-blog-login"></i>Войти</a>
+                <a href="#" class="mobile-menu-user-info" id="mobile-user-btn">
+                    <div class="mobile-menu-user-img">
+                        <img src="../img/user.jpg" />
+                        <span class="mobile-menu-user-name">Антон</span>
+                    </div>
+                    <i class="icon-blog-arrow-down"></i>
+                </a>
+                <ul class="mobile-menu-user-props" style="display: none">
+                    <li class="mobile-menu-user-item"><a>Личный кабинет</a></li>
+                    <li class="mobile-menu-user-item"><a>Настройки аккаунта</a></li>
+                    <li class="mobile-menu-user-item mobile-menu-user-exit"><a><i class="icon-blog-login"></i>Выйти</a></li>
+                </ul>
+            </div>
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-list-item"><a href="#">Каталог курсов</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Авторы</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Онлайн-школы</a></li>
+                <li class="mobile-menu-list-item"><a href="#">События</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Блог</a></li>
+            </ul>
+            <a href="#" class="mobile-menu-bottom-list">О проекте</a>
+            <a href="#" class="mobile-menu-bottom-list">Сотрудничество</a>
+        </section>
+    </header>
+    <div class="overlay" style="display: none"></div>
+    <main>
+        <section class="blog-detail-cover" style="background-image: url('img/top-bg.jpg');">
+            <div class="blog-detail-cover-filter" style="background-color: #ad6220; opacity: 0.85;"></div>
+            <div class="blog-detail-cover-wrap">
+                <div class="container">
+                    <a class="blog-detail-cover-breadcrumb"><i class="icon-blog-left-long-arrow"></i>Интернет маркетинг</a>
+                    <ul class="blog-detail-cover-data list">
+                        <li class="list-item">26.10.2020</li>
+                        <li class="list-item"><i class="icon-blog-views"></i>3 678</li>
+                        <li class="list-item"><i class="icon-blog-comments"></i>4</li>
+                    </ul>
+                    <h1 class="blog-detail-cover-title">Как снимать видеоуроки для курсов. 9 правил, о которых вы не задумывались</h1>
+                    <p class="blog-detail-cover-subtitle">Разбираемся, как записывать видеоуроки, чтобы сэкономить время и деньги на создании собственной онлайн-школы.</p>
+                </div>
+            </div>
+        </section>
+        <section class="blog-detail-container">
+            <div class="container">
+                <article class="blog-detail-content">
+                    <p>Дистант в традиционной школе – тема, о которой надо говорить. И дабы подытожить 2020 год, мы обратились к специалистам центра «Каменный город», которые занимаются повышением квалификации педагогов. Они подготовили для читателей нашего блога этот материал.</p>
+                    <section class="blog-detail-author">
+                        <div class="blog-detail-author-item">
+                            <div><img src="img/author-img.jpg" alt="Автор материала: Лариса Куранова"></div>
+                            <div>
+                                <div class="blog-detail-author-name">Лариса Куранова</div>
+                                <span>Редактор ИнфоХит</span>
+                            </div>
+                        </div>
+                    </section>
+                    <p>2020 год был сложным для всех. Педагогам он, конечно, запомнится из-за дистанционного обучения. Разбираемся, какие уроки выучили педагоги, какие сильные стороны нашли в себе и чему еще предстоит научиться, чтобы работать онлайн и не только.</p>
+                    <h2>1. Педагоги больше не боятся технологий</h2>
+                    <p>Согласно исследованию, проведенному ВШЭ, <i>до перехода на дистант онлайн-ресурсами пользовались 64% педагогов, а сейчас 86%.</i> Можно сказать, что за время дистанта каждый не просто научился включать компьютер, но и понял, с какими запросами выходить на службу поддержки. Педагоги освоили мессенджеры, сервисы для хранения файлов, видеоблоги и видеохостинги.</p>
+                    <p>Этот навык очень важен. Во-первых, он пригодится в любых критических ситуациях, когда будет введено дистанционное обучение. Во-вторых, скорее всего онлайн-занятия в той или иной форме останутся в школьном обучении, пусть и в меньшем количестве. В-третьих, цифровая грамотность – это ключевая компетенция педагога в современном мире. Педагог, которые владеет IT-технологиями, может придумывать новые форматы занятий и заданий, быстрее проверяет работы и может давать обратную связь разными способами.</p>
+                    <aside><h4>86% педагогов используют онлайн-ресурсы</h4></aside>
+                    <h3>2. Педагоги научились быть «гибкими»</h3>
+                    <h4>Цифровая гибкость</h4>
+                    <p>Педагоги, которые освоили цифровые технологии, легче понимали, как реагировать в экстренных ситуациях. Они не боялись «расшаривать» экран, чтобы объяснить сложную тему, писали и звонили в техническую поддержку, если программы не работали. Цифровая гибкость означает, что педагог владеет многими цифровыми инструментами и сам решает, что и когда использовать. Это дает преимущество при разработке уроков и других учебных форматов.</p>
+                    <h4>Коммуникативная гибкость</h4>
+                    <p>Дистанционное обучение показало, каким важным было живое общение. Частично оно усложнилось из-за технических проблем — пришлось привыкать общаться с выключенным видео, ждать, пока человек услышит твой вопрос, не говорить, пока не закончит другой. Но когда школьники привыкли к техническим трудностям, проблемы не исчезли. Дети чаще «закрывались» — теперь нельзя подозвать учителя и тихо задать вопрос, нужно говорить при всех.</p>
+                    <p class="info-parag">В итоге успех общения зависел от учителя. Если педагог обладал коммуникативной гибкостью, он мог придумать новые способы общения: создавать отдельный чат для тех, у кого есть трудности в общении, проводить неформальные встречи, чтобы одноклассники привыкли к новому формату. Побеждали те учителя, что чутко реагировали на запросы учеников и были открыты их предложениям.</p>
+                    <h4>Методическая гибкость</h4>
+                    <p>Если средний учитель строил раньше урок по стандартной схеме «повтор материала — новый материал — закрепление», то теперь ему пришлось изощряться.</p>
+                    <p>Во-первых, <span class="highlighted-text">часть методов перестала работать на дистанте.</span> Очень сложно проводить фронтальные опросы онлайн, когда каждый может найти в интернете ответы, значит нужно проверять знания, сочиняя задачи, даже логические.</p>
+                    <p>Во-вторых, <span class="highlighted-text">у школьников возникали проблемы с мотивацией</span> – в классе можно учиться по инерции, но за компьютером легко отвлечься и нужны по-настоящему интересные задания. Педагоги, подкованные методически, были готовы к этому вызову и даже еще больше развили свои навыки во время дистанта. </p>
+                    <h3>3. Педагоги поняли, как важна обратная связь</h3>
+                    <p>В классе это было не так очевидно. Учитель просто кивает или мотает головой, а дети уже понимают, что он хотел сказать. И наоборот по ученикам учитель понимал, в каком они настрое и даже если нужно менял тему или подбирал другие задания. При дистанционном обучении эти способы исчезли: по видеосвязи сложнее считать мимику и эмоции, чем вживую. А это влияет и на мотивацию, и на успеваемость, и на качество преподавания.</p>
+                    <aside class="no-top">
+                        <img width="100px" src="https://info-hit.ru/include/images/blog/emotion_kg.png" alt=""><br>
+                        На дистанте учитель не может считывать коллективный настрой класса. Приходится больше обращаться к каждому ученику.
+                    </aside>
+                    <p>Но эта проблема до сих пор не решена: учителям с учениками придется придумывать новые способы, например, проводить опросы в конце каждого урока, чтобы ученики оценили, как они поняли материал, какие эмоции испытывали. Это всего лишь «костыли» и не заменят живую обратную связь, но расширяют коммуникативные инструменты.</p>
+                    <h3>4. Педагоги поняли, что нужно прокачивать самостоятельность и мотивацию</h3>
+                    <p>Оказалось, что без мотивации ученику сложно заниматься вне школы. С одной стороны, это было известно давно — именно поэтому школы отговаривают родителей от домашнего обучения, понимая, как сложно мотивировать ребенка в таких условиях. С другой стороны, никогда раньше эта гипотеза не подтверждалась в таких масштабах.</p>
+                    <p class="highlighted-parag">Для того <span class="highlighted-text">чтобы прокачать мотивацию, нужно все чаще разговаривать с учеником — не просто объяснять, зачем нужно школьное обучение, а задавать вопросы ему, зачем он учится.</span> Если эта работа будет проведена качественно, то это не только повысит успеваемость, но и станет ступенькой в профориентации школьников.</p>
+                    <h3>5. Педагоги учатся объединяться</h3>
+                    <p>Во время дистанта возникало слишком много вопросов, и государственные органы далеко не всегда могли на них ответить. Педагогам пришлось объединяться: они искали ответы на форумах и соцсетях, создавали чаты для своих в мессенджерах, и участвовали в конференциях, на которых можно было найти адекватных экспертов.</p>
+                    <p class="info-parag">Образовательный центр «Каменный город» занимает активную позицию в помощи педагогам: мы быстро реагируем на запросы и организуем вебинары, онлайн-марафоны, конференции и даже курсы по актуальным, наболевшим вопросам.</p>
+                    <aside>
+                        <a href="https://study.eduregion.ru/?utm_source=infohit&utm_medium=promo" target="_blank">Онлайн-марафоны образовательного центра «Каменный город» для педагогов</a>
+                    </aside>
+                    <p>Например, за прошлый год мы провели онлайн-марафон о дистанционном обучении для педагогов и родителей. Мы присылали письма и проводили вебинары, в которых рассказывали о программах для работы на дистанте, необходимых качества педагога, давали советы и подсказки по организации рабочего дня. Марафон уже недоступен, но мы упаковали самые важные инструменты в рабочий курс.</p>
+                    <aside>
+                        <a href="https://eduregion.ru/courses/instrumenty-distantsionnogo-obucheniya-v-tsifrovoy-shkole/?sphrase_id=47789?utm_source=infohit&utm_medium=promo" target="_blank">Курс «Инструменты дистанционного обучения в цифровой школе»</a>
+                    </aside>
+                    <p>Еще пример. <span class="highlighted-text">В декабре мы в очередной раз собрали федеральных экспертов, чтобы провести конференцию по развитию функциональной и цифровой грамотности и гибких навыков.</span> Нам помогали специалисты Skyteach: эксперты задавали общее направление и ставили острые вопросы, методисты Skyteach рассказывали о современных приемах, которые помогают учителям развивать свои навыки и работать с учениками.</p>
+
+                    <p>Такая самоорганизация поможет педагогам в любой следующей критической ситуации. Ведь связи уже наработаны и всем понятно, кто в чем компетентен и где его искать. Через год-два, когда запустят новую систему аттестации педагогов, связи снова помогут — педагоги смогут делиться опытом, задавать друг другу сложные вопросы, даже если на них не ответят ФИРО и Министерство просвещения.</p>
+                    <section class="blog-detail-integration">
+                        <h4>Статья подготовлена:</h4>
+                        <div class="blog-detail-integration-info">
+                            <img src="https://info-hit.ru/include/images/blog/logo_kg.svg" alt="">
+                            <div class="blog-detail-integration-wrap">
+                                <h6>Образовательный центр «Каменный город»</h6>
+                                <p>Курсы повышения квалификации и переподготовки для педагогов.</p>
+                            </div>
+                            <a href="https://study.eduregion.ru/?utm_source=infohit&utm_medium=promo" target="_blank">Начать обучение ></a>
+                        </div>
+                    </section>
+                    <section class="blog-detail-info">
+                        <p>Редактор: <b>Лариса Куранова</b></p>
+                        <ul class="list">
+                            <li class="list-item">26.10.2020</li>
+                            <li class="list-item"><i class="icon-blog-views"></i>3 678</li>
+                            <li class="list-item"><i class="icon-blog-comments"></i>4</li>
+                        </ul>
+                        <p>Тэги: <a href="#">#заработок на партнерках</a> <a href="#">#обучение партнеров</a></p>
+                    </section>
+                    <aside class="blog-detail-socials">
+                        <span>Поделиться</span>
+                        <i class="icon-blog-left-long-arrow"></i>
+                        <a href="#"><img src="img/vk.svg" alt=""></a>
+                        <a href="#"><img src="img/fb.svg" alt=""></a>
+                        <a href="#"><img src="img/tw.svg" alt=""></a>
+                    </aside>
+                    <section class="blog-detail-nav">
+                        <a href="#" class="blog-detail-nav-btn btn-prev">
+                            <i class="icon-blog-left-long-arrow"></i>
+                            <span>Ранее</span>
+                            <b>Как выбрать платформу для запуска онлайн-школы</b>
+                        </a>
+                        <a href="#" class="blog-detail-nav-btn btn-next">
+                            <i class="icon-blog-left-long-arrow"></i>
+                            <span>Читайте далее</span>
+                            <b>Как настроить партнерку на GetCourse</b>
+                        </a>
+                    </section>
+                    <section class="blog-detail-comments">
+                        <h4>Комментариев к материалу: 4</h4>
+                        <div class="blog-detail-comment-wrap">
+                            <img src="img/author-img.jpg" />
+                            <div class="blog-detail-comment-info">
+                                <b>Лариса Куранова</b><span>26.10.2020 09:06</span>
+                                <p class="blog-detail-comment-content">Был ли у вас опыт съемки собственных видеоуроков? Буду рада если вы поделитесь своим мнением.</p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer blog-section">
+        <div class="container">
+            <img src="../img/footer-logo.svg" alt="Логотип" class="footer-logo">
+            <nav class="footer-menu">
+                <a href="#" class="footer-menu-item">О проекте</a>
+                <a href="#" class="footer-menu-item">Команда</a>
+                <a href="#" class="footer-menu-item">Сотрудничество</a>
+                <a href="#" class="footer-menu-item">Вакансии</a>
+                <a href="#" class="footer-menu-item">Политика конфиденциальности</a>
+            </nav>
+            <p class="footer-copyright">Любое использование или копирование материалов сайта, элементов дизайна и оформления допускается лишь с разрешения правообладателя и только со ссылкой на источник: info-hit.ru<br /><span>© ООО «ИнфоХит», 2012 — 2020</span></p>
+        </div>
+    </footer>
+    <script src="../js/app.js"></script>
+    <script src="../../../js/swiper/swiper-bundle.min.js"></script>
+    <script src="../../../js/swiper/swiper.js"></script>
+</body>
+</html>

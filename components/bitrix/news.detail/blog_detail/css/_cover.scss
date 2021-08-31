@@ -1,0 +1,95 @@
+.blog-detail {
+    &-cover {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+        &-filter {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+        &-wrap {
+            position: relative;
+            padding: 120px 15px 130px 25px;
+            z-index: 3;
+        }
+        &-breadcrumb {
+            width: fit-content;
+            font-family: $blog-second-font-italic;
+            color: $yellow;
+            font-size: 1.47em;
+            display: flex;
+            align-items: center;
+            i {
+                display: inline-block;
+                transform: rotate(180deg);
+                margin-right: 10px;
+                font-size: 1.1em;
+            }
+        }
+        &-data {
+            margin: 100px 0 30px;
+            color: rgba(255,255,255, 0.5);
+            font-size: 0.983em;
+            justify-content: left !important;
+            display: flex;
+        }
+        &-title, &-subtitle {
+            max-width: 1000px;
+            color: white;
+        }
+        &-title {
+            font-size: 3.2em;
+            line-height: 1.14em;
+        }
+        &-subtitle {
+            font-family: $blog-second-font;
+            font-size: 1.34em;
+            line-height: 1.4em;
+            margin-top: 25px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .blog-detail-cover {
+        &-wrap {
+            padding-left: 20px;
+        }
+        &-breadcrumb {
+            font-size: 1em;
+            i {
+                font-size: 1.2em;
+            }
+        }
+        &-title {
+            font-size: 2.4em;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .blog-detail-cover {
+        background-position: 20%;
+        &-wrap {
+            padding: 90px 13px 60px;
+        }
+        &-title {
+            font-size: 1.47em;
+        }
+        .list {
+            font-size: 1em;
+        }
+        &-subtitle {
+            font-size: 0.94em;
+            line-height: 1.43em;
+            margin-top: 25px;
+        }
+        &-data {
+            margin: 84px 0 20px;
+        }
+    }
+}

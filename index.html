@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: 'Formular';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400;
+            src: url('fonts/Formular/Formular.eot');
+            src: local('Formular'), local('Formular-Regular'),
+            url('fonts/Formular/Formular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/Formular/Formular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('fonts/Formular/Formular.woff') format('woff'), /* Modern Browsers */
+            url('fonts/Formular/Formular.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'FormularBold';
+            font-display: swap;
+            font-style: normal;
+            font-weight: bold;
+            src: url('fonts/Formular/FormularBold/Formular-Bold.eot'); /* IE9 Compat Modes */
+            src: local('Formular-Bold'),
+            url('fonts/Formular/FormularBold/Formular-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/Formular/FormularBold/Formular-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('fonts/Formular/FormularBold/Formular-Bold.woff') format('woff'), /* Modern Browsers */
+            url('fonts/Formular/FormularBold/Formular-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaPro';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400;
+            src: url('fonts/LavaPro/LavaPro-Regular.eot'); /* IE9 Compat Modes */
+            src: local('LavaPro'), local('LavaPro-Regular'),
+            url('fonts/LavaPro/LavaPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/LavaPro/LavaPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('fonts/LavaPro/LavaPro-Regular.woff') format('woff'), /* Modern Browsers */
+            url('fonts/LavaPro/LavaPro-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'LavaProHeavy';
+            font-display: swap;
+            font-style: normal;
+            font-weight: 800;
+            src: url('fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.eot'); /* IE9 Compat Modes */
+            src: local('LavaPro-Heavy'),
+            url('fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.woff2') format('woff2'), /* Super Modern Browsers */
+            url('fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.woff') format('woff'), /* Modern Browsers */
+            url('fonts/LavaPro/LavaProHeavy/LavaPro-Heavy.ttf') format('truetype'); /* Safari, Android, iOS */
+        }
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('fonts/icomoon/icomoon.eot?bswf9v');
+            src:  url('fonts/icomoon/icomoon.eot?bswf9v#iefix') format('embedded-opentype'),
+            url('fonts/icomoon/icomoon.ttf?bswf9v') format('truetype'),
+            url('fonts/icomoon/icomoon.woff?bswf9v') format('woff'),
+            url('fonts/icomoon/icomoon.svg?bswf9v#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font-icomoon.css">
+    <title>Блог ИнфоХит</title>
+</head>
+<body>
+    <header class="header entered">
+        <div class="header-menu-wrap">
+            <a href="#" class="header-logo"><img src="img/header-logo.svg" alt=""><span style="background-image: url('img/logo-mobile.svg')"></span></a>
+            <nav class="header-menu">
+                <a href="#" class="header-menu-item">Каталог курсов</a>
+                <a href="#" class="header-menu-item">Авторы</a>
+                <a href="#" class="header-menu-item">Онлайн-школы</a>
+                <a href="#" class="header-menu-item">События</a>
+                <a href="#" class="header-menu-item">Блог</a>
+            </nav>
+            <button class="btn header-search-icon" id="header-search">
+                <i class="icon-blog-magnifiying-glass"></i>
+                <i class="icon-blog-exit"></i>
+            </button>
+            <div class="header-enter">
+                <button class="btn header-enter-btn">Войти</button>
+                <div class="header-user">
+                    <button class="btn header-user-menu-btn" id="user-menu">
+                        <img src="img/user.jpg" class="header-user-img"/>
+                        <i class="icon-blog-arrow-down"></i>
+                    </button>
+                    <ul class="header-user-menu" style="display: none">
+                        <li class="header-user-menu-item"><a href="">Личный кабинет</a></li>
+                        <li class="header-user-menu-item"><a href="">Настройки аккаунта</a></li>
+                        <li class="header-user-menu-item header-user-exit"><a href=""><i class="icon-blog-login"></i>Выйти</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn header-mobile-menu-btn" id="open-mobile-menu"><i class="icon-blog-mobile-menu"></i></button>
+        </div>
+        <div class="header-search-wrap" style="display: none">
+            <input type="text" class="header-search-field" name="blog-search" id="blog-search">
+            <button type="submit" class="btn header-search-btn" value="Искать"><i class="icon-blog-magnifiying-glass"></i></button>
+        </div>
+        <section class="mobile-menu" style="display: none">
+            <div class="mobile-menu-header">
+                <img class="mobile-menu-header-logo" src="img/logo-yellow.svg" alt="Логотип ИнфоХит" />
+                <button class="btn close-btn" id="close-mobile-menu"><i class="icon-blog-exit"></i></button>
+            </div>
+            <div class="mobile-menu-user">
+                <a href="#" class="mobile-menu-login"><i class="icon-blog-login"></i>Войти</a>
+                <a href="#" class="mobile-menu-user-info" id="mobile-user-btn">
+                    <div class="mobile-menu-user-img">
+                        <img src="img/user.jpg" />
+                        <span class="mobile-menu-user-name">Антон</span>
+                    </div>
+                    <i class="icon-blog-arrow-down"></i>
+                </a>
+                <ul class="mobile-menu-user-props" style="display: none">
+                    <li class="mobile-menu-user-item"><a>Личный кабинет</a></li>
+                    <li class="mobile-menu-user-item"><a>Настройки аккаунта</a></li>
+                    <li class="mobile-menu-user-item mobile-menu-user-exit"><a><i class="icon-blog-login"></i>Выйти</a></li>
+                </ul>
+            </div>
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-list-item"><a href="#">Каталог курсов</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Авторы</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Онлайн-школы</a></li>
+                <li class="mobile-menu-list-item"><a href="#">События</a></li>
+                <li class="mobile-menu-list-item"><a href="#">Блог</a></li>
+            </ul>
+            <a href="#" class="mobile-menu-bottom-list">О проекте</a>
+            <a href="#" class="mobile-menu-bottom-list">Сотрудничество</a>
+        </section>
+    </header>
+    <div class="overlay" style="display: none"></div>
+    <main class="main">
+        <section class="blog-top blog-section">
+                <div class="container">
+                    <nav class="blog-top-navbar">
+                        <img src="img/logo.svg" class="blog-top-logo logo" />
+                        <ul class="blog-top-navbar-list">
+                            <li class="blog-top-navbar-item active"><a href="#">Интернет маркетинг</a></li>
+                            <li class="blog-top-navbar-item"><a href="#">Создать курс</a></li>
+                            <li class="blog-top-navbar-item"><a href="#">Лайфхаки</a></li>
+                            <li class="blog-top-navbar-item"><a href="#">Бизнес</a></li>
+                            <li class="blog-top-navbar-item"><a href="#">Отношения</a></li>
+                        </ul>
+                    </nav>
+                    <h1 class="blog-top-title">Интернет маркетинг</h1>
+                </div>
+            </section>
+        <section class="blog-hero" style="background-image: url('img/hero-bg.jpg')">
+            <a href="#" class="blog-hero-link">
+                <h2 class='blog-hero-title'>Как выбрать платформу для запуска онлайн-школы</h2>
+                <p class="blog-hero-subtitle">9 моментов, на которые стоит обратить внимание</p>
+                <div class="blog-hero-btn"><span class="blog-hero-line"></span><i class="icon-blog-left-long-arrow"></i><span class="blog-hero-line"></span></div>
+                <ul class="blog-hero-list list">
+                    <li class="blog-hero-item list-item">26.10.2020</li>
+                    <li title="Количество просмотров" class="blog-hero-item list-item"><i class="icon-blog-views"></i>3 678</li>
+                    <li title="Количество комментариев" class="blog-hero-item list-item"><i class="icon-blog-comments"></i>4</li>
+                </ul>
+            </a>
+        </section>
+        <section class="blog-list blog-section">
+            <div class="container">
+                <div class="blog-list-row">
+                    <div class="blog-item">
+                        <a href="#">
+                            <div class="blog-item-wrap">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="img/items/item1-340w.jpg">
+                                    <source media="(min-width: 769px)" srcset="img/items/item1-316w.jpg">
+                                    <img src="img/items/item1-316w.jpg">
+                                </picture>
+                                <i class="icon-blog-spinner"></i>
+                            </div>
+                            <div class="blog-item-info">
+                                <h3 class="blog-item-title">Как убрать живот в домашних условиях</h3>
+                                <p class="blog-item-desc">Детально разбираем, как подготовиться к встрече, которая может изменить жизнь.</p>
+                                <ul class="blog-item-list list">
+                                    <li class="blog-item-data list-item">26.10</li>
+                                    <li title="Количество просмотров" class="blog-item-data list-item"><i class="icon-blog-views"></i>3689</li>
+                                    <li title="Количество комментариев" class="blog-item-data list-item"><i class="icon-blog-comments"></i>4</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blog-item">
+                        <a href="#">
+                            <div class="blog-item-wrap">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="img/items/item2-340w.jpg">
+                                    <source media="(min-width: 769px)" srcset="img/items/item2-316w.jpg">
+                                    <img src="img/items/item2-316w.jpg">
+                                </picture>
+                                <i class="icon-blog-spinner"></i>
+                            </div>
+                            <div class="blog-item-info">
+                                <h3 class="blog-item-title">Болгарские приседания</h3>
+                                <p class="blog-item-desc">9 моментов, на которые стоит обратить внимание.</p>
+                                <ul class="blog-item-list list">
+                                    <li class="blog-item-data list-item">26.10</li>
+                                    <li title="Количество просмотров" class="blog-item-data list-item"><i class="icon-blog-views"></i>3689</li>
+                                    <li title="Количество комментариев" class="blog-item-data list-item"><i class="icon-blog-comments"></i>4</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blog-item">
+                        <a href="#">
+                            <div class="blog-item-wrap">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="img/items/item3-340w.jpg">
+                                    <source media="(min-width: 769px)" srcset="img/items/item3-316w.jpg">
+                                    <img src="img/items/item3-316w.jpg">
+                                </picture>
+                                <i class="icon-blog-spinner"></i>
+                            </div>
+                            <div class="blog-item-info">
+                                <h3 class="blog-item-title">Магазин курсов в сервисе «Антитренинги»</h3>
+                                <p class="blog-item-desc">Детально разбираем, как подготовиться к встрече, которая может изменить жизнь.</p>
+                                <ul class="blog-item-list list">
+                                    <li class="blog-item-data list-item">26.10</li>
+                                    <li title="Количество просмотров" class="blog-item-data list-item"><i class="icon-blog-views"></i>3689</li>
+                                    <li title="Количество комментариев" class="blog-item-data list-item"><i class="icon-blog-comments"></i>4</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blog-item">
+                        <a href="#">
+                            <div class="blog-item-wrap">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="img/items/item4-340w.jpg">
+                                    <source media="(min-width: 769px)" srcset="img/items/item4-316w.jpg">
+                                    <img src="img/items/item4-316w.jpg">
+                                </picture>
+                                <i class="icon-blog-spinner"></i>
+                            </div>
+                            <div class="blog-item-info">
+                                <h3 class="blog-item-title">Игрофикация онлайн-курса</h3>
+                                <p class="blog-item-desc">9 моментов, на которые стоит обратить внимание.</p>
+                                <ul class="blog-item-list list">
+                                    <li class="blog-item-data list-item">26.10</li>
+                                    <li title="Количество просмотров" class="blog-item-data list-item"><i class="icon-blog-views"></i>3689</li>
+                                    <li title="Количество комментариев" class="blog-item-data list-item"><i class="icon-blog-comments"></i>4</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="btn blog-list-btn">Загрузить ещё</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer blog-section">
+        <div class="container">
+            <img src="img/footer-logo.svg" alt="Логотип" class="footer-logo">
+            <nav class="footer-menu">
+                <a href="#" class="footer-menu-item">О проекте</a>
+                <a href="#" class="footer-menu-item">Команда</a>
+                <a href="#" class="footer-menu-item">Сотрудничество</a>
+                <a href="#" class="footer-menu-item">Вакансии</a>
+                <a href="#" class="footer-menu-item">Политика конфиденциальности</a>
+            </nav>
+            <p class="footer-copyright">Любое использование или копирование материалов сайта, элементов дизайна и оформления допускается лишь с разрешения правообладателя и только со ссылкой на источник: info-hit.ru<br /><span>© ООО «ИнфоХит», 2012 — 2020</span></p>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

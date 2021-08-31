@@ -1,0 +1,186 @@
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-open-book-2:before {
+  content: "\e932";
+}
+.icon-ebook:before {
+  content: "\e933";
+}
+.icon-online-video:before {
+  content: "\e934";
+}
+.icon-note:before {
+  content: "\e935";
+}
+.icon-padlock:before {
+  content: "\e92f";
+}
+.icon-screenshot:before {
+  content: "\e930";
+}
+.icon-agreement:before {
+  content: "\e931";
+}
+.icon-supermarket-gift:before {
+  content: "\e93c";
+}
+.icon-safari:before {
+  content: "\e93d";
+}
+.icon-dices:before {
+  content: "\e93e";
+}
+.icon-graph:before {
+  content: "\e900";
+}
+.icon-group:before {
+  content: "\e901";
+}
+.icon-discount:before {
+  content: "\e902";
+}
+.icon-business:before {
+  content: "\e903";
+}
+.icon-click-cursor:before {
+  content: "\e904";
+}
+.icon-upload:before {
+  content: "\e905";
+}
+.icon-play-button-1:before {
+  content: "\e906";
+}
+.icon-shopping-cart:before {
+  content: "\e907";
+}
+.icon-newspaper-folded:before {
+  content: "\e908";
+}
+.icon-draw:before {
+  content: "\e909";
+}
+.icon-university-building:before {
+  content: "\e90a";
+}
+.icon-cancel:before {
+  content: "\e90b";
+}
+.icon-squares:before {
+  content: "\e90c";
+}
+.icon-eye:before {
+  content: "\e90d";
+}
+.icon-youtube:before {
+  content: "\e90e";
+}
+.icon-handshake:before {
+  content: "\e90f";
+}
+.icon-internet:before {
+  content: "\e910";
+}
+.icon-smartphone-call:before {
+  content: "\e911";
+}
+.icon-placeholder:before {
+  content: "\e912";
+}
+.icon-high-volume:before {
+  content: "\e913";
+}
+.icon-star:before {
+  content: "\e914";
+}
+.icon-chat-comment-oval-speech-bubble-with-text-lines:before {
+  content: "\e915";
+}
+.icon-interface:before {
+  content: "\e916";
+}
+.icon-calendar:before {
+  content: "\e917";
+}
+.icon-notifications-bell-button:before {
+  content: "\e918";
+}
+.icon-zoom-in:before {
+  content: "\e919";
+}
+.icon-email:before {
+  content: "\e91a";
+}
+.icon-circular-arrow:before {
+  content: "\e91b";
+}
+.icon-bar-graph:before {
+  content: "\e91c";
+}
+.icon-share:before {
+  content: "\e91d";
+}
+.icon-heart:before {
+  content: "\e91e";
+}
+.icon-magnifying-glass:before {
+  content: "\e91f";
+}
+.icon-small-calendar:before {
+  content: "\e920";
+}
+.icon-online-course:before {
+  content: "\e921";
+}
+.icon-avatar:before {
+  content: "\e922";
+}
+.icon-home:before {
+  content: "\e923";
+}
+.icon-more:before {
+  content: "\e924";
+}
+.icon-sitename:before {
+  content: "\e925";
+}
+.icon-logo:before {
+  content: "\e926";
+}
+.icon-play-button:before {
+  content: "\e927";
+}
+.icon-edit:before {
+  content: "\e928";
+}
+.icon-add:before {
+  content: "\e929";
+}
+.icon-video-player:before {
+  content: "\e92a";
+}
+.icon-video-file:before {
+  content: "\e92b";
+}
+.icon-round-delete-button:before {
+  content: "\e92c";
+}
+.icon-cashback:before {
+  content: "\e92d";
+}
+.icon-open-book:before {
+  content: "\e92e";
+}

@@ -1,0 +1,23 @@
+// Fonts
+$blog-font: "Formular", Arial, Helvetica, serif;
+$blog-font-bold: "FormularBold", Arial, Helvetica, serif;
+$blog-font-black: "FormularBlack", Arial, Helvetica, serif;
+$blog-second-font: "LavaPro", Arial, Helvetica, serif;
+$blog-second-font-italic: "LavaProItalic", Arial, Helvetica, serif;
+$blog-second-font-bold: "LavaProBold", Arial, Helvetica, serif;
+
+b {
+    font-family: $blog-second-font-bold;
+}
+.filter {
+    width: 100%;
+    height: 100%;
+    background: rgba(#000, 0.5);
+}
+.blog-section {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.btn {
+    @include opacity();
+}

@@ -1,0 +1,42 @@
+[class^="icon-blog-"], [class*=" icon-blog-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon-blog' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-blog-left-long-arrow:before {
+  content: "\e903";
+}
+.icon-blog-exit:before {
+  content: "\e902";
+}
+.icon-blog-login:before {
+  content: "\e900";
+}
+.icon-blog-arrow-down:before {
+  content: "\e901";
+}
+.icon-blog-mobile-menu:before {
+  content: "\e905";
+}
+.icon-blog-magnifiying-glass:before {
+  content: "\e906";
+}
+.icon-blog-views:before {
+  content: "\e907";
+}
+.icon-blog-comments:before {
+  content: "\e908";
+}
+.icon-blog-spinner:before {
+  content: "\e97f";
+}
